@@ -289,7 +289,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../splunk_observability/create_thousandeyes_test/" class="md-tabs__link">
+        <a href="../../splunk_observability/create_metric_stream_to_splunk_observability/" class="md-tabs__link">
           
   
   
@@ -309,7 +309,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../splunk_core/create_thousandeyes_test/" class="md-tabs__link">
+        <a href="../../splunk_core/login_splunk_cloud_enterprise/" class="md-tabs__link">
           
   
   
@@ -487,6 +487,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Log In to ThousandEyes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -503,6 +521,64 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-thousandeyes-page-load-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create a ThousandEyes Page Load Test
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a ThousandEyes Page Load Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-test-via-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create a Test via UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-test-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Test ID
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -806,34 +882,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_observability/create_thousandeyes_test/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Create a ThousandEyes test
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../splunk_observability/create_metric_stream_to_splunk_observability/" class="md-nav__link">
         
   
@@ -999,34 +1047,6 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../splunk_core/create_thousandeyes_test/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Create a ThousandEyes test
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -1434,6 +1454,36 @@
 </ul>
 </li>
 <li>Click <code>Sign In</code></li>
+</ul>
+<h2 id="create-a-thousandeyes-page-load-test">Create a ThousandEyes Page Load Test</h2>
+<p>For ThousandEyes to be able to stream data to Splunk, the data first needs to be collected by ThousandEyes. To achieve this, we need to create a ThousandEyes test.
+Refer to <a href="https://docs.thousandeyes.com/product-documentation/tests">ThousandEyes documentation</a> for test creation.</p>
+<p>We are going to create a <code>Page Load</code> test that validates the availability of <code>www.google.com</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Skip Test Creation if Already Created</p>
+<p>In case you already have a <code>Page Load</code> test created, you can skip this step and use the existing test.</p>
+</div>
+<h3 id="create-a-test-via-ui">Create a Test via UI</h3>
+<ul>
+<li>Click on <code>Network &amp; App Synthetics</code> in the left navigation bar</li>
+<li>Select <code>Test Settings</code> from the dropdown menu</li>
+<li>Click the <code>+ Add New Test</code> button</li>
+<li>Select <code>Page Load</code> from the test type options
+<img alt="create PageLoad Test" src="../../img/thousandeyes/createPageLoadTest1.png" /></li>
+<li>Configure Test Settings<ul>
+<li><code>Test Name</code>: Enter a descriptive name (e.g., "Test")</li>
+<li><code>URL</code>: Enter <code>https://www.google.com</code></li>
+<li>In the <code>Agents</code> section, select a Cloud Agent</li>
+</ul>
+</li>
+<li>Click <code>Create New Test</code>
+<img alt="create PageLoad Test" src="../../img/thousandeyes/createPageLoadTest2.png" /></li>
+</ul>
+<h3 id="get-test-id">Get <code>Test ID</code></h3>
+<ul>
+<li>After creating the test, click on the test name to view details</li>
+<li>In the URL bar, note the <code>Test ID</code> number (e.g., <code>https://app.thousandeyes.com/network-app-synthetics/views/?testId=522030</code>)</li>
+<li>Copy this <code>Test ID</code> for reference when configuring streams</li>
 </ul>
 
 
