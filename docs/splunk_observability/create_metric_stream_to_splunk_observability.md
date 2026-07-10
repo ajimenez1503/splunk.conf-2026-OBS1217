@@ -12,9 +12,8 @@ To integrate Splunk Observability Cloud with ThousandEyes, follow these steps:
     - Set the `Target` to `HTTP`
     - Enter the `Endpoint URL` to send data in `OTLP (OpenTelemetry Protocol)` format:
       ```
-      https://ingest.<REALM>.signalfx.com/v2/datapoint/otlp
+      https://ingest.us1.signalfx.com/v2/datapoint/otlp
       ```
-        - Replace `<REALM>` with your Splunk environment such as `us1`, `eu0`, `us0`
     - For `Preset Configuration`, select `Splunk Observability Cloud`
     - For `Auth Type`, select `Custom`
     - Set the following `Custom Headers`:
@@ -28,8 +27,6 @@ To integrate Splunk Observability Cloud with ThousandEyes, follow these steps:
 
 ![Create OpenTelemetry metric integration](../img/thousandeyes/create_opentelemetry_metric_integration.png)
 
-!!! note "Test Selection"
-    For more information on creating a test, see the previous step or [General Setup Instructions](https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/opentelemetry/configure-opentelemetry-streams).
 
 !!! note "Receiving data"
     The stream will begin sending data to Splunk Observability Cloud in a couple of minutes.
