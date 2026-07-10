@@ -18,8 +18,8 @@ During this session you will learn about:
 To prepare for this Workshop:
 
 - Have accounts for:
-    - [ThousandEyes](https://www.thousandeyes.com) 
-    - [Splunk Observability Cloud](https://www.splunk.com/en_us/products/observability-cloud.html)
+    - [ThousandEyes](https://www.thousandeyes.com) — a workshop account is provided in [**Log In to ThousandEyes**](getting_started/login_thousandeyes.md)
+    - [Splunk Observability Cloud](https://www.splunk.com/en_us/products/observability-cloud.html) — a workshop account is provided in [**Log In to Splunk Observability Cloud**](getting_started/login_splunk_observability.md)
     - [Splunk Cloud Platform](https://www.splunk.com/en_us/products/splunk-cloud-platform.html) or [Splunk Enterprise](https://www.splunk.com/en_us/products/splunk-enterprise.html) (free trial is not valid due to the [issue](https://ideas.splunk.com/ideas/PLECID-I-816))
         - Version requirements: 9.4 or later.
 - Permissions and roles:
@@ -29,7 +29,7 @@ To prepare for this Workshop:
     - Splunk Observability Cloud: role `power` or `admin` (to create access tokens and dashboards).
     - Splunk Cloud Platform / Splunk Enterprise: role `admin` or `sc_admin`.
 - All workshop steps are completed in the ThousandEyes and Splunk web UIs — no API tools are required.
-- Go through [**Log In to ThousandEyes**](getting_started/login_thousandeyes.md) before starting the different sections of the Workshop
+- Go through [**Log In to ThousandEyes**](getting_started/login_thousandeyes.md) and [**Log In to Splunk Observability Cloud**](getting_started/login_splunk_observability.md) before starting the different sections of the Workshop
 
 ## Other integrations
 

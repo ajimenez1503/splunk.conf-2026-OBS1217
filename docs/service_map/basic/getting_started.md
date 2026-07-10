@@ -2,7 +2,7 @@
 
 For this 30-minute workshop, we use a pre-configured OpenTelemetry demo application running in the cloud. The application is already instrumented and sending telemetry data to a Splunk Observability account owned by ThousandEyes.
 
-It is publicly accessible at [http://13.52.215.7:8080](http://13.52.215.7:8080).
+It is publicly accessible at [http://streaming-distributed-tracing-833293294.eu-central-1.elb.amazonaws.com/splunk/api/test](http://streaming-distributed-tracing-833293294.eu-central-1.elb.amazonaws.com/splunk/api/test).
 
 ## Recording 
 

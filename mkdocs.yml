@@ -14,6 +14,7 @@ nav:
   - Home: README.md
   - Getting Started:
     - Log In to ThousandEyes: getting_started/login_thousandeyes.md
+    - Log In to Splunk Observability Cloud: getting_started/login_splunk_observability.md
   - Service Map:
     - Introduction: service_map/introduction.md
     - Getting Started: service_map/basic/getting_started.md

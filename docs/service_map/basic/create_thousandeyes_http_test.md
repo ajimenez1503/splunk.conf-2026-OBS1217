@@ -13,7 +13,7 @@ Use the ThousandEyes web interface to create the test.
 ![create HTTP Test](../../img/thousandeyes/createHttpTest1.png)
 - Configure Test Settings
       - `Test Name`: e.g., "Basic - Test Distributed Tracing"
-      - `URL`: Enter `http://13.52.215.7:8080/api/test`
+      - `URL`: Enter `http://streaming-distributed-tracing-833293294.eu-central-1.elb.amazonaws.com/splunk/api/test`
       - In the `Agents` section, select a Cloud Agent
       - Under `HTTP Comunication and Performance (Optional)`, check `Enable Distributed Tracing`
           ![Enable distributed tracing](../../img/thousandeyes/enabe_distributed_tracing.png)
