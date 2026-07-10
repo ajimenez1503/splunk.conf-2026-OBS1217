@@ -2,7 +2,7 @@
 
 Splunk.conf 2026 (OBS1217) — 30-minute workshop edition.
 
-All the docs are published from this repository.
+Workshop docs: https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/
 
 # TODO
 - Add ThousandEyes alerts into Splunk (using Splunk App)
