@@ -10,9 +10,9 @@
 
 ![Search traces](../img/splunk_observability/searchTraces.png)
 
-- You can also filter by other attributes like `thousandeyes.test.id`
+- Filter by `thousandeyes.test.name` and enter your test name (for example, `Seat12`)
 
-![Search by ThousandEyes Test Id](../img/splunk_observability/search_by_test_id.png)
+![Search by ThousandEyes test name](../img/splunk_observability/search_by_test_name.png)
 
 - Click on a trace to view details
 

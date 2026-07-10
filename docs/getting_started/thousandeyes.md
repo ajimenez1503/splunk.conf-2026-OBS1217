@@ -28,14 +28,15 @@ We are going to create a `Page Load` test that validates the availability of `ww
 - Select `Page Load` from the test type options
 ![create PageLoad Test](../img/thousandeyes/createPageLoadTest1.png)
 - Configure Test Settings
-    - `Test Name`: Enter a descriptive name (e.g., "Test")
+    - `Test Name`: Enter a descriptive name that includes your seat number (e.g., `Test - Seat 12`)
     - `URL`: Enter `https://www.google.com`
     - In the `Agents` section, select a Cloud Agent
 - Click `Create New Test`
 ![create PageLoad Test](../img/thousandeyes/createPageLoadTest2.png)
 
-### Get `Test ID`
+### Remember your test name
 
-- After creating the test, click on the test name to view details
-- In the URL bar, note the `Test ID` number (e.g., `https://app.thousandeyes.com/network-app-synthetics/views/?testId=522030`)
-- Copy this `Test ID` for reference when configuring streams
+When configuring streams later in the workshop, you will select your test **by name** in the ThousandEyes UI. You do not need the Test ID.
+
+- Use the same **test name** you entered when creating the test
+- Keep your **seat number** in the name so you can identify your data in the shared Splunk Observability dashboard

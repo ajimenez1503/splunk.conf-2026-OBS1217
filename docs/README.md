@@ -8,8 +8,8 @@ During this session you will learn about:
 
 - [**Visualizing the service map using distributed tracing in ThousandEyes**](service_map/basic/getting_started.md)
 - [**Streaming ThousandEyes data to Splunk Observability Cloud**](getting_started/login_splunk_observability.md)
-- [**Streaming ThousandEyes data to Splunk Cloud Platform or Splunk Enterprise**](splunk_core/login_splunk_cloud_enterprise.md)
-- [**Exploring the capabilities of the Cisco ThousandEyes App for Splunk**](thousandeyes_splunk_app/getting_started.md)
+- [**Streaming ThousandEyes data to Splunk Cloud Platform or Splunk Enterprise**](getting_started/login_splunk_cloud_enterprise.md)
+- [**Exploring the capabilities of the Cisco ThousandEyes App for Splunk**](thousandeyes_splunk_app/authenticate_thousandeyes_user.md)
 
 ![workflow](img/workflow_diagram.png)
 
