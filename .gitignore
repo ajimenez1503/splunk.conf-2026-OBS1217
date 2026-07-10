@@ -1,0 +1,5 @@
+site/
+resources/.git/
+*.DS_Store
+.trunk/*
+.venv
