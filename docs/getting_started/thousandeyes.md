@@ -1,4 +1,6 @@
-# Log In to ThousandEyes
+# ThousandEyes
+
+## Log In to ThousandEyes
 
 Use the workshop account to access ThousandEyes:
 
