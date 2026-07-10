@@ -1,6 +1,6 @@
 # Log In to Splunk Cloud Platform or Splunk Enterprise
 
-This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and obtain an HEC token for the ThousandEyes stream.
+This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and copy the HEC token for the ThousandEyes stream.
 
 ## Choose Your Splunk Platform
 
@@ -40,24 +40,19 @@ This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and
 
 ## Get Splunk HEC Token
 
-HTTP Event Collector (HEC) tokens are required to send data to Splunk from external sources like ThousandEyes.
+HTTP Event Collector (HEC) tokens are required to send data to Splunk from external sources like ThousandEyes. A `ThousandEyesToken` is already created for the workshop.
 
 - In Splunk Web, go to `Settings` in the top menu
 - Click `Data Inputs` under the "Data" section
 - Click `HTTP Event Collector`
-- Click `New Token` button
-- Configure the token settings
-  - Give a name: `ThousandEyesToken`
-- Click `Submit` to create the token
-- Copy the HEC Token
-
+- Open the existing `ThousandEyesToken`
+- Copy the HEC token
 
 ![Hec Token](../img/splunk_core/copyHecToken.png)
 
 ## Identify HOST of your Splunk instance
 
 - Splunk Enterprise: The host is typically the server name or IP address where Splunk is installed. For example, if you Splunk web page is `https://te-test-i-03af7829c8bab4176.splunk.show/en-GB/app/launcher/home`, your host will be: `te-test-i-03af7829c8bab4176.splunk.show`
-- Splunk Cloud Platform: The host is the URL of your Splunk Cloud instance. For example, if your Splunk Cloud URL is `https://your-instance.splunkcloud.com`, your host will be `your-instance`
 
 !!! warning "Requirements"
     URL must be reachable and secure. [More info](https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/opentelemetry/configure-splunk-integrations#url-target-requirements)

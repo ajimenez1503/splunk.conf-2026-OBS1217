@@ -12,6 +12,9 @@
 
 - Filter by `thousandeyes.test.name` and enter your test name (for example, `Seat12`)
 
+!!! note "Screenshot improvement tracked"
+    The example image below is a placeholder and will be replaced with a clean manual capture. Track progress in [GitHub issue #2](https://github.com/ajimenez1503/splunk.conf-2026-OBS1217/issues/2).
+
 ![Search by ThousandEyes test name](../img/splunk_observability/search_by_test_name.png)
 
 - Click on a trace to view details

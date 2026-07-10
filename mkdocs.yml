@@ -15,10 +15,9 @@ nav:
   - Getting Started:
     - ThousandEyes: getting_started/thousandeyes.md
     - Log In to Splunk Observability Cloud: getting_started/login_splunk_observability.md
-    - Log In to Splunk Cloud/Enterprise: getting_started/login_splunk_cloud_enterprise.md
+    - Log In to Splunk Enterprise: getting_started/login_splunk_cloud_enterprise.md
   - Service Map:
     - Introduction: service_map/introduction.md
-    - Getting Started: service_map/basic/getting_started.md
     - Create the Splunk APM Integration: service_map/basic/create_splunk_apm_integration.md
     - Create ThousandEyes HTTP Test: service_map/basic/create_thousandeyes_http_test.md
     - View the Service Map: service_map/basic/view_service_map.md
@@ -27,11 +26,11 @@ nav:
     - Create a Trace Stream to Splunk Observability Cloud: splunk_observability/create_trace_stream_to_splunk_observability.md
     - Visualize ThousandEyes Metrics in Splunk Observability Cloud: splunk_observability/visualize_metrics_in_splunk_observability.md
     - Visualize ThousandEyes Traces in Splunk Observability Cloud: splunk_observability/visualize_traces_in_splunk_observability.md
-  - Splunk Cloud/Enterprise:
-    - Create a Metrics Stream to Splunk Cloud/Enterprise: splunk_core/create_metrics_stream_to_splunk_cloud_enterprise.md
-    - Create a Logs Stream to Splunk Cloud/Enterprise: splunk_core/create_logs_stream_to_splunk_cloud_enterprise.md
-    - Visualize ThousandEyes Metrics in Splunk Cloud/Enterprise: splunk_core/visualize_metrics_in_splunk_cloud_enterprise.md
-    - Visualize ThousandEyes Logs in Splunk Cloud/Enterprise: splunk_core/visualize_logs_in_splunk_cloud_enterprise.md
+  - Splunk Enterprise:
+    - Create a Metrics Stream to Splunk Enterprise: splunk_core/create_metrics_stream_to_splunk_cloud_enterprise.md
+    - Create a Logs Stream to Splunk Enterprise: splunk_core/create_logs_stream_to_splunk_cloud_enterprise.md
+    - Visualize ThousandEyes Metrics in Splunk Enterprise: splunk_core/visualize_metrics_in_splunk_cloud_enterprise.md
+    - Visualize ThousandEyes Logs in Splunk Enterprise: splunk_core/visualize_logs_in_splunk_cloud_enterprise.md
   - Cisco ThousandEyes App for Splunk:
     - Authenticate the ThousandEyes User: thousandeyes_splunk_app/authenticate_thousandeyes_user.md
     - Create a Test Stream - Metrics Input: thousandeyes_splunk_app/test_metrics_stream_input.md

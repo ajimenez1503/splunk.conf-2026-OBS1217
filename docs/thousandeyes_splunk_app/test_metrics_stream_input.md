@@ -6,9 +6,7 @@
     - Name: unique name
     - ThousandEyes User: select you user
     - Account Group: select your account
-    - HEC Target: The HEC target of your Splunk instance. Example HEC Target:
-        - For Splunk Cloud Platform: `https://http-inputs-<host>.splunkcloud.com:443/services/collector/event`
-        - For Splunk Enterprise: `https://<host>:8088/services/collector/event`
+    - HEC Target: The HEC target of your Splunk instance. Example: `https://<host>:8088/services/collector/event`
     - Cloud & Enterprise Agent Tests: select your HTTP test
     - HEC Token: select `ThousandEyesToken`
     - Test Index: select `default`
