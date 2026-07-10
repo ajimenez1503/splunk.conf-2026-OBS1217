@@ -5,6 +5,10 @@
          <lastmod>2026-07-10</lastmod>
     </url>
     <url>
+         <loc>https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/getting_started/login_splunk_cloud_enterprise/</loc>
+         <lastmod>2026-07-10</lastmod>
+    </url>
+    <url>
          <loc>https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/getting_started/login_splunk_observability/</loc>
          <lastmod>2026-07-10</lastmod>
     </url>
@@ -41,10 +45,6 @@
          <lastmod>2026-07-10</lastmod>
     </url>
     <url>
-         <loc>https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/splunk_core/login_splunk_cloud_enterprise/</loc>
-         <lastmod>2026-07-10</lastmod>
-    </url>
-    <url>
          <loc>https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/splunk_core/visualize_logs_in_splunk_cloud_enterprise/</loc>
          <lastmod>2026-07-10</lastmod>
     </url>
@@ -77,19 +77,11 @@
          <lastmod>2026-07-10</lastmod>
     </url>
     <url>
-         <loc>https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/thousandeyes_splunk_app/getting_started/</loc>
-         <lastmod>2026-07-10</lastmod>
-    </url>
-    <url>
          <loc>https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/thousandeyes_splunk_app/test_metrics_stream_input/</loc>
          <lastmod>2026-07-10</lastmod>
     </url>
     <url>
          <loc>https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/thousandeyes_splunk_app/test_traces_stream_input/</loc>
-         <lastmod>2026-07-10</lastmod>
-    </url>
-    <url>
-         <loc>https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/thousandeyes_splunk_app/troubleshooting/</loc>
          <lastmod>2026-07-10</lastmod>
     </url>
 </urlset>
