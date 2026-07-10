@@ -29,7 +29,7 @@
     
     
       
-        <title>Log In to Splunk Cloud/Enterprise - ThousandEyes & Splunk Integration Workshop</title>
+        <title>Log In to Splunk Enterprise - ThousandEyes & Splunk Integration Workshop</title>
       
     
     
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Log In to Splunk Cloud/Enterprise
+              Log In to Splunk Enterprise
             
           </span>
         </div>
@@ -313,7 +313,7 @@
           
   
   
-  Splunk Cloud/Enterprise
+  Splunk Enterprise
 
         </a>
       </li>
@@ -550,7 +550,7 @@
   <span class="md-ellipsis">
     
   
-    Log In to Splunk Cloud/Enterprise
+    Log In to Splunk Enterprise
   
 
     
@@ -568,7 +568,7 @@
   <span class="md-ellipsis">
     
   
-    Log In to Splunk Cloud/Enterprise
+    Log In to Splunk Enterprise
   
 
     
@@ -739,34 +739,6 @@
     
   
     Introduction
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../service_map/basic/getting_started/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Getting Started
   
 
     
@@ -1076,7 +1048,7 @@
   <span class="md-ellipsis">
     
   
-    Splunk Cloud/Enterprise
+    Splunk Enterprise
   
 
     
@@ -1092,7 +1064,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Splunk Cloud/Enterprise
+    Splunk Enterprise
   
 
           </label>
@@ -1112,7 +1084,7 @@
   <span class="md-ellipsis">
     
   
-    Create a Metrics Stream to Splunk Cloud/Enterprise
+    Create a Metrics Stream to Splunk Enterprise
   
 
     
@@ -1140,7 +1112,7 @@
   <span class="md-ellipsis">
     
   
-    Create a Logs Stream to Splunk Cloud/Enterprise
+    Create a Logs Stream to Splunk Enterprise
   
 
     
@@ -1168,7 +1140,7 @@
   <span class="md-ellipsis">
     
   
-    Visualize ThousandEyes Metrics in Splunk Cloud/Enterprise
+    Visualize ThousandEyes Metrics in Splunk Enterprise
   
 
     
@@ -1196,7 +1168,7 @@
   <span class="md-ellipsis">
     
   
-    Visualize ThousandEyes Logs in Splunk Cloud/Enterprise
+    Visualize ThousandEyes Logs in Splunk Enterprise
   
 
     
@@ -1411,7 +1383,7 @@
 
 
 <h1 id="log-in-to-splunk-cloud-platform-or-splunk-enterprise">Log In to Splunk Cloud Platform or Splunk Enterprise</h1>
-<p>This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and obtain an HEC token for the ThousandEyes stream.</p>
+<p>This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and copy the HEC token for the ThousandEyes stream.</p>
 <h2 id="choose-your-splunk-platform">Choose Your Splunk Platform</h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Splunk Cloud Platform</label><label for="__tabbed_1_2">Splunk Enterprise</label></div>
 <div class="tabbed-content">
@@ -1457,22 +1429,18 @@
 </div>
 </div>
 <h2 id="get-splunk-hec-token">Get Splunk HEC Token</h2>
-<p>HTTP Event Collector (HEC) tokens are required to send data to Splunk from external sources like ThousandEyes.</p>
+<p>HTTP Event Collector (HEC) tokens are required to send data to Splunk from external sources like ThousandEyes. A <code>ThousandEyesToken</code> is already created for the workshop.</p>
 <ul>
 <li>In Splunk Web, go to <code>Settings</code> in the top menu</li>
 <li>Click <code>Data Inputs</code> under the "Data" section</li>
 <li>Click <code>HTTP Event Collector</code></li>
-<li>Click <code>New Token</code> button</li>
-<li>Configure the token settings</li>
-<li>Give a name: <code>ThousandEyesToken</code></li>
-<li>Click <code>Submit</code> to create the token</li>
-<li>Copy the HEC Token</li>
+<li>Open the existing <code>ThousandEyesToken</code></li>
+<li>Copy the HEC token</li>
 </ul>
 <p><img alt="Hec Token" src="../../img/splunk_core/copyHecToken.png" /></p>
 <h2 id="identify-host-of-your-splunk-instance">Identify HOST of your Splunk instance</h2>
 <ul>
 <li>Splunk Enterprise: The host is typically the server name or IP address where Splunk is installed. For example, if you Splunk web page is <code>https://te-test-i-03af7829c8bab4176.splunk.show/en-GB/app/launcher/home</code>, your host will be: <code>te-test-i-03af7829c8bab4176.splunk.show</code></li>
-<li>Splunk Cloud Platform: The host is the URL of your Splunk Cloud instance. For example, if your Splunk Cloud URL is <code>https://your-instance.splunkcloud.com</code>, your host will be <code>your-instance</code></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Requirements</p>
