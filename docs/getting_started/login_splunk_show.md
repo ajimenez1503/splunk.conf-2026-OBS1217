@@ -1,14 +1,13 @@
 # Log In to Splunk Show Instance
 
 This guide will help you log into your Splunk Show instance and copy the HEC token for the ThousandEyes stream.
-
-Using Splunk Show
-
 - Access the Splunk Show [https://splunk.show/te-splunk](https://show.splunk.com/)
+
+!!! TODO !!!
 
 ![splunk show](../img/splunk_core/splunk_show.png)
 - Sign in to `splunk.com` (Register if you don't have an account)
-- Enroll event `ThousandEyes Integration Workshop`
+- Enroll event `XXX`
 
 ![Enroll event](../img/splunk_core/enroll_event.png)
 
@@ -16,18 +15,18 @@ Using Splunk Show
 
 ![Splunk instance info](../img/splunk_core/splunk_instance_info.png)
 
-## Get Splunk HEC Token
+## Find your HEC Token
 
-HTTP Event Collector (HEC) tokens are required to send data to Splunk from external sources like ThousandEyes. A `ThousandEyesToken` is already created for the workshop.
+We will use HTTP Event Collector (HEC) to get data from Thousand eyes. A token is already created for the workshop.
 
 - In Splunk Web, go to `Settings` in the top menu
-- Click `Data Inputs` under the "Data" section
-- Click `HTTP Event Collector`
-- Open the existing `ThousandEyesToken`
-- Copy the HEC token
+- In the `Data` section, click `Data inputs`
+- Select `HTTP Event Collector`
+- Find the existing `thousandeyes_hec` token and copy the token value
 
-![Hec Token](../img/splunk_core/copyHecToken.png)
+![Hec Token](../img/splunk_core/splk_copy_hec_token.png)
 
 ## Identify HOST of your Splunk instance
 
-- Splunk Enterprise: The host is typically the server name or IP address where Splunk is installed. For example, if you Splunk web page is `https://te-test-i-03af7829c8bab4176.splunk.show/en-GB/app/launcher/home`, your host will be: `te-test-i-03af7829c8bab4176.splunk.show`
+The host is typically the server name or IP address where Splunk is installed.
+For example, if you Splunk web page is `https://conf26-obs1217-001.splunk.show`, your host will be: `conf26-obs1217-001`
