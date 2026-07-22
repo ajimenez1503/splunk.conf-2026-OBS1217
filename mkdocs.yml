@@ -17,7 +17,6 @@ nav:
     - Log In to Splunk Observability Cloud: getting_started/login_splunk_observability.md
     - Log In to Splunk Enterprise: getting_started/login_splunk_cloud_enterprise.md
   - Service Map:
-    - Introduction: service_map/introduction.md
     - Create the Splunk APM Integration: service_map/basic/create_splunk_apm_integration.md
     - Create ThousandEyes HTTP Test: service_map/basic/create_thousandeyes_http_test.md
     - View the Service Map: service_map/basic/view_service_map.md

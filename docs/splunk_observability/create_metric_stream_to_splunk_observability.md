@@ -17,8 +17,7 @@ To integrate Splunk Observability Cloud with ThousandEyes, follow these steps:
     - For `Preset Configuration`, select `Splunk Observability Cloud`
     - For `Auth Type`, select `Custom`
     - Set the following `Custom Headers`:
-        - `X-SF-Token: {TOKEN}`
-            - Enter your Splunk Observability Cloud access token
+        - `X-SF-Token: qc-VZhVaVARLKDPuhBJQfQ`
         - `Content-Type: application/x-protobuf`
     - Select `Metric` as the OpenTelemetry `Signal`
     - Select `v2` as the `Data Model Version`

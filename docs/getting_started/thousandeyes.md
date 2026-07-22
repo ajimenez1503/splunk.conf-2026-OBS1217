@@ -20,7 +20,7 @@ We are going to create a `Page Load` test that validates the availability of `ww
 !!! note "Skip Test Creation if Already Created"
     In case you already have a `Page Load` test created, you can skip this step and use the existing test.
 
-### Create a Test via UI
+### Create a Test
 
 - Click on `Network & App Synthetics` in the left navigation bar
 - Select `Test Settings` from the dropdown menu
