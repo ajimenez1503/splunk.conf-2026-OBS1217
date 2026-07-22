@@ -12,7 +12,7 @@
         <meta name="author" content="Antonio Jimenez">
       
       
-        <link rel="canonical" href="https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/getting_started/login_splunk_cloud_enterprise/">
+        <link rel="canonical" href="https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/getting_started/login_splunk_show/">
       
       
         <link rel="prev" href="../login_splunk_observability/">
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#log-in-to-splunk-enterprise" class="md-skip">
+        <a href="#log-in-to-splunk-show-instance" class="md-skip">
           Skip to content
         </a>
       
@@ -594,21 +594,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-splunk-show" class="md-nav__link">
+  <a href="#find-your-hec-token" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Using Splunk Show
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-splunk-hec-token" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Get Splunk HEC Token
+        Find your HEC Token
       
     </span>
   </a>
@@ -1326,36 +1315,30 @@
   
 
 
-<h1 id="log-in-to-splunk-enterprise">Log In to Splunk Enterprise</h1>
-<p>This guide will help you log into Splunk Enterprise via Splunk Show and copy the HEC token for the ThousandEyes stream.</p>
-<h2 id="using-splunk-show">Using Splunk Show</h2>
+<h1 id="log-in-to-splunk-show-instance">Log In to Splunk Show Instance</h1>
+<p>This guide will help you log into your Splunk Show instance and copy the HEC token for the ThousandEyes stream.
+- Access the Splunk Show <a href="https://show.splunk.com/">https://splunk.show/te-splunk</a></p>
+<p>!!! TODO !!!</p>
+<p><img alt="splunk show" src="../../img/splunk_core/splunk_show.png" />
+- Sign in to <code>splunk.com</code> (Register if you don't have an account)
+- Enroll event <code>XXX</code></p>
+<p><img alt="Enroll event" src="../../img/splunk_core/enroll_event.png" /></p>
 <ul>
-<li>Access the Splunk Show <a href="https://splunk.show/te-splunk">https://splunk.show/te-splunk</a>
-<img alt="splunk show" src="../../img/splunk_core/splunk_show.png" /></li>
-<li>Sign in to <code>splunk.com</code> (Register if you don't have an account)</li>
-<li>Enroll event <code>ThousandEyes Integration Workshop</code>
-<img alt="Enroll event" src="../../img/splunk_core/enroll_event.png" /></li>
-<li>Once the event starts, you will see the instance information with the URL and credentials to access the Splunk instance
-<img alt="Splunk instance info" src="../../img/splunk_core/splunk_instance_info.png" /></li>
+<li>Once the event starts, you will see the instance information with the URL and credentials to access the Splunk instance</li>
 </ul>
-<h2 id="get-splunk-hec-token">Get Splunk HEC Token</h2>
-<p>HTTP Event Collector (HEC) tokens are required to send data to Splunk from external sources like ThousandEyes. A <code>ThousandEyesToken</code> is already created for the workshop.</p>
+<p><img alt="Splunk instance info" src="../../img/splunk_core/splunk_instance_info.png" /></p>
+<h2 id="find-your-hec-token">Find your HEC Token</h2>
+<p>We will use HTTP Event Collector (HEC) to get data from Thousand eyes. A token is already created for the workshop.</p>
 <ul>
 <li>In Splunk Web, go to <code>Settings</code> in the top menu</li>
-<li>Click <code>Data Inputs</code> under the "Data" section</li>
-<li>Click <code>HTTP Event Collector</code></li>
-<li>Open the existing <code>ThousandEyesToken</code></li>
-<li>Copy the HEC token</li>
+<li>In the <code>Data</code> section, click <code>Data inputs</code></li>
+<li>Select <code>HTTP Event Collector</code></li>
+<li>Find the existing <code>thousandeyes_hec</code> token and copy the token value</li>
 </ul>
-<p><img alt="Hec Token" src="../../img/splunk_core/copyHecToken.png" /></p>
+<p><img alt="Hec Token" src="../../img/splunk_core/splk_copy_hec_token.png" /></p>
 <h2 id="identify-host-of-your-splunk-instance">Identify HOST of your Splunk instance</h2>
-<ul>
-<li>Splunk Enterprise: The host is typically the server name or IP address where Splunk is installed. For example, if you Splunk web page is <code>https://te-test-i-03af7829c8bab4176.splunk.show/en-GB/app/launcher/home</code>, your host will be: <code>te-test-i-03af7829c8bab4176.splunk.show</code></li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Requirements</p>
-<p>URL must be reachable and secure. <a href="https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/opentelemetry/configure-splunk-integrations#url-target-requirements">More info</a></p>
-</div>
+<p>The host is typically the server name or IP address where Splunk is installed.
+For example, if you Splunk web page is <code>https://conf26-obs1217-001.splunk.show</code>, your host will be: <code>conf26-obs1217-001</code></p>
 
 
 
