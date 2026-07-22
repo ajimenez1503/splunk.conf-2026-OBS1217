@@ -1,10 +1,8 @@
-# ThousandEyes - Splunk Integrations Workshop
+# Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk
 
+Welcome to **"OBS1217 - Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk"** workshop
 
-
-Welcome to **"ThousandEyes & Splunk Integration Workshop - Splunk .conf OBS1217"**
-
-During this session you will learn about: 
+During this workshop you will learn about: 
 
 - [**Visualizing the service map using distributed tracing in ThousandEyes**](service_map/basic/create_splunk_apm_integration.md)
 - [**Streaming ThousandEyes data to Splunk Observability Cloud**](getting_started/login_splunk_observability.md)
