@@ -2,7 +2,7 @@
 
 
 
-Welcome to **"ThousandEyes & Splunk Integration workshop"**
+Welcome to **"ThousandEyes & Splunk Integration Workshop - Splunk .conf OBS1217"**
 
 During this session you will learn about: 
 
