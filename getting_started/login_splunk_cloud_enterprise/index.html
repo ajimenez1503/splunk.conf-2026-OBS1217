@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#log-in-to-splunk-cloud-platform-or-splunk-enterprise" class="md-skip">
+        <a href="#log-in-to-splunk-enterprise" class="md-skip">
           Skip to content
         </a>
       
@@ -594,41 +594,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#choose-your-splunk-platform" class="md-nav__link">
+  <a href="#using-splunk-show" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Choose Your Splunk Platform
+        Using Splunk Show
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Choose Your Splunk Platform">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#log-in-to-splunk-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Log In to Splunk Cloud
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#log-in-to-splunk-enterprise" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Log In to Splunk Enterprise
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1354,37 +1326,9 @@
   
 
 
-<h1 id="log-in-to-splunk-cloud-platform-or-splunk-enterprise">Log In to Splunk Cloud Platform or Splunk Enterprise</h1>
-<p>This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and copy the HEC token for the ThousandEyes stream.</p>
-<h2 id="choose-your-splunk-platform">Choose Your Splunk Platform</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Splunk Cloud Platform</label><label for="__tabbed_1_2">Splunk Enterprise</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>If you're using Splunk Cloud Platform:</p>
-<h3 id="log-in-to-splunk-cloud">Log In to Splunk Cloud</h3>
-<ul>
-<li>Navigate to your Splunk Cloud instance URL (e.g., <code>https://your-instance.splunkcloud.com</code>)</li>
-<li>Enter your <code>username</code> and <code>password</code></li>
-<li>Click <code>Sign In</code></li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Trial Account Limitation</p>
-<p>If you're using a Splunk Cloud trial account, you won't be able to stream ThousandEyes data due to the <a href="https://ideas.splunk.com/ideas/PLECID-I-816">issue</a></p>
-</div>
-</div>
-<div class="tabbed-block">
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Your Splunk Enterprise Instance</label><label for="__tabbed_2_2">Using Splunk Show</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>If you're using Splunk Enterprise (on-premises):</p>
-<h3 id="log-in-to-splunk-enterprise">Log In to Splunk Enterprise</h3>
-<ul>
-<li>Navigate to your Splunk Enterprise web interface (typically <code>https://your-server:8000</code>)</li>
-<li>Enter your <code>username</code> and <code>password</code></li>
-<li>Click <code>Sign In</code></li>
-</ul>
-</div>
-<div class="tabbed-block">
+<h1 id="log-in-to-splunk-enterprise">Log In to Splunk Enterprise</h1>
+<p>This guide will help you log into Splunk Enterprise via Splunk Show and copy the HEC token for the ThousandEyes stream.</p>
+<h2 id="using-splunk-show">Using Splunk Show</h2>
 <ul>
 <li>Access the Splunk Show <a href="https://splunk.show/te-splunk">https://splunk.show/te-splunk</a>
 <img alt="splunk show" src="../../img/splunk_core/splunk_show.png" /></li>
@@ -1394,12 +1338,6 @@
 <li>Once the event starts, you will see the instance information with the URL and credentials to access the Splunk instance
 <img alt="Splunk instance info" src="../../img/splunk_core/splunk_instance_info.png" /></li>
 </ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <h2 id="get-splunk-hec-token">Get Splunk HEC Token</h2>
 <p>HTTP Event Collector (HEC) tokens are required to send data to Splunk from external sources like ThousandEyes. A <code>ThousandEyesToken</code> is already created for the workshop.</p>
 <ul>
