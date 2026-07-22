@@ -1,6 +1,6 @@
 # Log In to Splunk Observability Cloud
 
-This guide will help you log into Splunk Observability Cloud and obtain an access token for the ThousandEyes stream.
+This guide will help you log into Splunk Observability Cloud.
 
 Use the workshop account to access Splunk Observability Cloud:
 

@@ -1,6 +1,6 @@
 
-site_name: 'ThousandEyes & Splunk Integration Workshop'
-site_description: ThousandEyes & Splunk Integration Workshop
+site_name: 'ThousandEyes & Splunk Integration Workshop - Splunk .conf OBS1217'
+site_description: ThousandEyes & Splunk Integration Workshop - Splunk .conf OBS1217
 site_author: Antonio Jimenez
 site_url: https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/
 repo_url: https://github.com/ajimenez1503/splunk.conf-2026-OBS1217
@@ -15,9 +15,8 @@ nav:
   - Getting Started:
     - ThousandEyes: getting_started/thousandeyes.md
     - Log In to Splunk Observability Cloud: getting_started/login_splunk_observability.md
-    - Log In to Splunk Enterprise: getting_started/login_splunk_cloud_enterprise.md
+    - Log In to Splunk Enterprise: getting_started/login_splunk_show.md
   - Service Map:
-    - Introduction: service_map/introduction.md
     - Create the Splunk APM Integration: service_map/basic/create_splunk_apm_integration.md
     - Create ThousandEyes HTTP Test: service_map/basic/create_thousandeyes_http_test.md
     - View the Service Map: service_map/basic/view_service_map.md

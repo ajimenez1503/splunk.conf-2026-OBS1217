@@ -16,7 +16,7 @@ For ThousandEyes to be able to stream data to Splunk, first it needs to be colle
 For this exercise, we are going to create a `Page Load` test that checks the availability and performance of `www.cisco.com` page.
 To learn more about Page Load tests, check the [Page Load Test documentation](https://docs.thousandeyes.com/product-documentation/tests/web-layer-tests#page-load-test)
 
-### Create a Test via UI
+### Create a Test
 
 - Click on `Network & App Synthetics` in the left navigation bar
 - Select `Test Settings`
