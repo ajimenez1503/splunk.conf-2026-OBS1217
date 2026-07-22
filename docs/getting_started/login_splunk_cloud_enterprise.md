@@ -1,42 +1,16 @@
-# Log In to Splunk Cloud Platform or Splunk Enterprise
+# Log In to Splunk Enterprise
 
-This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and copy the HEC token for the ThousandEyes stream.
+This guide will help you log into Splunk Enterprise via Splunk Show and copy the HEC token for the ThousandEyes stream.
 
-## Choose Your Splunk Platform
+## Using Splunk Show
 
-=== "Splunk Cloud Platform"
-
-    If you're using Splunk Cloud Platform:
-    
-    ### Log In to Splunk Cloud
-    - Navigate to your Splunk Cloud instance URL (e.g., `https://your-instance.splunkcloud.com`)
-    - Enter your `username` and `password`
-    - Click `Sign In`
-
-    !!! warning "Trial Account Limitation"
-        If you're using a Splunk Cloud trial account, you won't be able to stream ThousandEyes data due to the [issue](https://ideas.splunk.com/ideas/PLECID-I-816)
-
-
-=== "Splunk Enterprise"
-
-    === "Your Splunk Enterprise Instance"
-
-        If you're using Splunk Enterprise (on-premises):
-        
-        ### Log In to Splunk Enterprise
-        - Navigate to your Splunk Enterprise web interface (typically `https://your-server:8000`)
-        - Enter your `username` and `password`
-        - Click `Sign In`
-
-    === "Using Splunk Show"
-
-        - Access the Splunk Show [https://splunk.show/te-splunk](https://splunk.show/te-splunk)
-        ![splunk show](../img/splunk_core/splunk_show.png)
-        - Sign in to `splunk.com` (Register if you don't have an account)
-        - Enroll event `ThousandEyes Integration Workshop`
-        ![Enroll event](../img/splunk_core/enroll_event.png)
-        - Once the event starts, you will see the instance information with the URL and credentials to access the Splunk instance
-        ![Splunk instance info](../img/splunk_core/splunk_instance_info.png)
+- Access the Splunk Show [https://splunk.show/te-splunk](https://splunk.show/te-splunk)
+![splunk show](../img/splunk_core/splunk_show.png)
+- Sign in to `splunk.com` (Register if you don't have an account)
+- Enroll event `ThousandEyes Integration Workshop`
+![Enroll event](../img/splunk_core/enroll_event.png)
+- Once the event starts, you will see the instance information with the URL and credentials to access the Splunk instance
+![Splunk instance info](../img/splunk_core/splunk_instance_info.png)
 
 ## Get Splunk HEC Token
 
