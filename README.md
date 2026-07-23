@@ -1,6 +1,6 @@
 # ThousandEyes - Splunk Integrations
 
-Splunk.conf 2026 (OBS1217) — 30-minute workshop edition.
+Splunk.conf 2026 (OBS1217) —
 
 Workshop docs: https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/
 
