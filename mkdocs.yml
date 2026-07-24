@@ -1,6 +1,6 @@
 
 site_name: '.conf26 OBS1217 - Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk'
-site_description: Interactive Workshop instructions for .conf26 OBS1217 - Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk
+site_description: 'Interactive Workshop instructions for .conf26 OBS1217 - Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk'
 site_author: Antonio Jimenez
 site_url: https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/
 repo_url: https://github.com/ajimenez1503/splunk.conf-2026-OBS1217
