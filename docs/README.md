@@ -10,7 +10,3 @@ During this workshop you will learn about:
 - [**Exploring the capabilities of the Cisco ThousandEyes App for Splunk**](thousandeyes_splunk_app/authenticate_thousandeyes_user.md)
 
 ![workflow](img/workflow_diagram.png)
-
-## Other integrations
-
-- [Stream ThousandEyes alerts to Splunk Cloud Platform or Splunk Enterprise](https://docs.thousandeyes.com/product-documentation/integration-guides/custom-webhook-examples/splunk-alert-notifs)
