@@ -1,31 +1,31 @@
-# Create a Metrics Streams on ThousandEyes for Splunk Observability Cloud
+# Create ThousandEyes Metric Stream for Splunk Observability Cloud
 
-Use the ThousandEyes web interface to create the stream integration manually via OpenTelemetry.
+To create a ThousandEyes Metric Stream Splunk, follow these steps:
 
-To integrate Splunk Observability Cloud with ThousandEyes, follow these steps:
+- Navigate to `Manage` -> `Integrations` -> `Integration 1.0`
+- Click `+ New Integration` and select `ThousandEyes for OpenTelemetry`
 
-- Navigate to `Manage` > `Integrations` > `Integration 1.0`
-- Click `+ New Integration` and select `OpenTelemetry Integration`
-![opentelemetry integration](../img/thousandeyes/opentelemetry_integration.png)
-- Configure the integration settings:
-    - Enter a `Name` for the integration (e.g., "Splunk Observability Cloud Metrics Integration")
+![opentelemetry integration](../img/thousandeyes/te_otel_integration_nav.png)
+
+- Configure the integration:
+    - Enter a `Name` for the integration (e.g., "OBS1217 - ofushtei - O11y metric stream")
     - Set the `Target` to `HTTP`
-    - Enter the `Endpoint URL` to send data in `OTLP (OpenTelemetry Protocol)` format:
+    - Enter the `Endpoint URL` to send OTLP (OpenTelemetry Protocol) data to:
+
       ```
       https://ingest.us1.signalfx.com/v2/datapoint/otlp
       ```
-    - For `Preset Configuration`, select `Splunk Observability Cloud`
+
+    - From the `Preset Configuration` dropdown, select `Splunk Observability Cloud`
     - For `Auth Type`, select `Custom`
     - Set the following `Custom Headers`:
-        - `X-SF-Token: qc-VZhVaVARLKDPuhBJQfQ`
-        - `Content-Type: application/x-protobuf`
-    - Select `Metric` as the OpenTelemetry `Signal`
+        - `X-SF-Token` to `qc-VZhVaVARLKDPuhBJQfQ`
+        - `Content-Type` to `application/x-protobuf`
+    - Select `Metric` as the `OpenTelemetry Signal`
     - Select `v2` as the `Data Model Version`
-    - For `Network & App Synthetic`, select a the test that you want to stream data from
+    - In `Network & App Synthetic Tests` dropdown, select the test you created earlier
 - Click `Save`
 
-![Create OpenTelemetry metric integration](../img/thousandeyes/create_opentelemetry_metric_integration.png)
+![Create OpenTelemetry metric integration](../img/thousandeyes/te_otel_metric_config.png)
 
-
-!!! note "Receiving data"
-    The stream will begin sending data to Splunk Observability Cloud in a couple of minutes.
+Please note, it will take a couple of minutes for the metric stream to start, so while you wait, you can move onto the next topic.
