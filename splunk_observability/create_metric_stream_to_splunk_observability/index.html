@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#create-a-metrics-streams-on-thousandeyes-for-splunk-observability-cloud" class="md-skip">
+        <a href="#create-thousandeyes-metric-stream-for-splunk-observability-cloud" class="md-skip">
           Skip to content
         </a>
       
@@ -1256,38 +1256,40 @@
   
 
 
-<h1 id="create-a-metrics-streams-on-thousandeyes-for-splunk-observability-cloud">Create a Metrics Streams on ThousandEyes for Splunk Observability Cloud</h1>
-<p>Use the ThousandEyes web interface to create the stream integration manually via OpenTelemetry.</p>
-<p>To integrate Splunk Observability Cloud with ThousandEyes, follow these steps:</p>
+<h1 id="create-thousandeyes-metric-stream-for-splunk-observability-cloud">Create ThousandEyes Metric Stream for Splunk Observability Cloud</h1>
+<p>To create a ThousandEyes Metric Stream Splunk, follow these steps:</p>
 <ul>
-<li>Navigate to <code>Manage</code> &gt; <code>Integrations</code> &gt; <code>Integration 1.0</code></li>
-<li>Click <code>+ New Integration</code> and select <code>OpenTelemetry Integration</code>
-<img alt="opentelemetry integration" src="../../img/thousandeyes/opentelemetry_integration.png" /></li>
-<li>Configure the integration settings:<ul>
-<li>Enter a <code>Name</code> for the integration (e.g., "Splunk Observability Cloud Metrics Integration")</li>
+<li>Navigate to <code>Manage</code> -&gt; <code>Integrations</code> -&gt; <code>Integration 1.0</code></li>
+<li>Click <code>+ New Integration</code> and select <code>ThousandEyes for OpenTelemetry</code></li>
+</ul>
+<p><img alt="opentelemetry integration" src="../../img/thousandeyes/te_otel_integration_nav.png" /></p>
+<ul>
+<li>
+<p>Configure the integration:</p>
+<ul>
+<li>Enter a <code>Name</code> for the integration (e.g., "OBS1217 - ofushtei - O11y metric stream")</li>
 <li>Set the <code>Target</code> to <code>HTTP</code></li>
-<li>Enter the <code>Endpoint URL</code> to send data in <code>OTLP (OpenTelemetry Protocol)</code> format:
-  <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://ingest.us1.signalfx.com/v2/datapoint/otlp
-</span></code></pre></div></li>
-<li>For <code>Preset Configuration</code>, select <code>Splunk Observability Cloud</code></li>
+<li>Enter the <code>Endpoint URL</code> to send OTLP (OpenTelemetry Protocol) data to:</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://ingest.us1.signalfx.com/v2/datapoint/otlp
+</span></code></pre></div>
+<ul>
+<li>From the <code>Preset Configuration</code> dropdown, select <code>Splunk Observability Cloud</code></li>
 <li>For <code>Auth Type</code>, select <code>Custom</code></li>
 <li>Set the following <code>Custom Headers</code>:<ul>
-<li><code>X-SF-Token: qc-VZhVaVARLKDPuhBJQfQ</code></li>
-<li><code>Content-Type: application/x-protobuf</code></li>
+<li><code>X-SF-Token</code> to <code>qc-VZhVaVARLKDPuhBJQfQ</code></li>
+<li><code>Content-Type</code> to <code>application/x-protobuf</code></li>
 </ul>
 </li>
-<li>Select <code>Metric</code> as the OpenTelemetry <code>Signal</code></li>
+<li>Select <code>Metric</code> as the <code>OpenTelemetry Signal</code></li>
 <li>Select <code>v2</code> as the <code>Data Model Version</code></li>
-<li>For <code>Network &amp; App Synthetic</code>, select a the test that you want to stream data from</li>
-</ul>
-</li>
+<li>In <code>Network &amp; App Synthetic Tests</code> dropdown, select the test you created earlier</li>
 <li>Click <code>Save</code></li>
 </ul>
-<p><img alt="Create OpenTelemetry metric integration" src="../../img/thousandeyes/create_opentelemetry_metric_integration.png" /></p>
-<div class="admonition note">
-<p class="admonition-title">Receiving data</p>
-<p>The stream will begin sending data to Splunk Observability Cloud in a couple of minutes.</p>
-</div>
+</li>
+</ul>
+<p><img alt="Create OpenTelemetry metric integration" src="../../img/thousandeyes/te_otel_metric_config.png" /></p>
+<p>Please note, it will take a couple of minutes for the metric stream to start, so while you wait, you can move onto the next topic.</p>
 
 
 
