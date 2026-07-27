@@ -26,7 +26,7 @@ To create a ThousandEyes Metric Stream Splunk, follow these steps:
     - In `Network & App Synthetic` dropdown, select the test you created earlier
 - Click `Save`
 
-![Create OpenTelemetry trace integration](../img/thousandeyes/create_opentelemetry_trace_integration.png)
+![Create OpenTelemetry trace integration](../img/thousandeyes/te_otel_trace_config.png)
 
 Please note, it will take a couple of minutes for the trace stream to start. 
 You can view traces in the APM section of Splunk Observability Cloud.
