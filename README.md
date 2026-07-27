@@ -4,9 +4,6 @@ Splunk.conf 2026 (OBS1217)
 
 Workshop docs: https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/
 
-# TODO
-- Add ThousandEyes alerts into Splunk (using Splunk App)
-
 # Publish to GitHub Pages
 
 One-time setup in the repository settings:
