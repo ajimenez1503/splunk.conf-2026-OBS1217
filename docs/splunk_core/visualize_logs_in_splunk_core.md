@@ -1,4 +1,4 @@
-# Visualize ThousandEyes Logs in Splunk Cloud Platform or Splunk Enterprise
+# Visualize ThousandEyes Logs in Splunk Core
 
 ## Let's generate some logs
 - In the ThousandEyes platform:
@@ -7,7 +7,7 @@
   - Update a test
   - Logout from the ThousandEyes platform
 
-## Visualize ThousandEyes Logs in Splunk Cloud Platform or Splunk Enterprise
+## Visualize ThousandEyes Logs in Splunk Core
 
 - In the initial page of Splunk page
 - Navigate to `Search & Reporting`

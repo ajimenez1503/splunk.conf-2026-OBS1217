@@ -40,8 +40,6 @@ You should have received an invite email from Splunk Show containing a link to a
 
 ![Splunk Show instance info](../img/splunk_core/splunk_show_instance_info.png)
 
-Note: The screenshot above shows `Splunk Enterprise` but it may be called something else depending on the environments used in this hands-on session.
-
 ## Find your HEC Token
 
 We will use HTTP Event Collector (HEC) to get data from Thousand eyes. A token is already created for the workshop.

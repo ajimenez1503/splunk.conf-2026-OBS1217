@@ -1,4 +1,4 @@
-# Create a Logs Stream on ThousandEyes for Splunk Cloud Platform or Splunk Enterprise
+# Create a Logs Stream on ThousandEyes for Splunk Core
 
 Use the ThousandEyes web interface to create the integration manually using Integrations 2.0.
 

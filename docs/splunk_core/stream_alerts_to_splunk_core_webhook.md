@@ -1,6 +1,6 @@
-# Stream ThousandEyes Alerts to Splunk Enterprise
+# Stream ThousandEyes Alerts to Splunk Core
 
-This guide shows how to send ThousandEyes alert notifications to Splunk Enterprise using a **Custom Webhook** integration.
+This guide shows how to send ThousandEyes alert notifications to Splunk Core using a **Custom Webhook** integration.
 
 ## Create a Custom Webhook connector
 
@@ -39,9 +39,9 @@ This guide shows how to send ThousandEyes alert notifications to Splunk Enterpri
 
 ![Manage Alert Rules](../img/thousandeyes/te_manage_alert_rules.png)
 
-## Validate alerts in Splunk Enterprise
+## Validate alerts in Splunk Core
 
-When an alert is triggered, search for the event in Splunk Enterprise:
+When an alert is triggered, search for the event in Splunk Core:
 
 ```
 index="*" eventType="THOUSANDEYES_ALERT_NOTIFICATION"

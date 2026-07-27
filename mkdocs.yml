@@ -36,7 +36,6 @@ nav:
     - Create a Test Stream - Metrics Input: thousandeyes_splunk_app/test_metrics_stream_input.md
     - Create an Activity Log Input: thousandeyes_splunk_app/activity_logs_input.md
     - Create an Alerts Input: thousandeyes_splunk_app/alerts_input.md
-    - Create a Test Stream - Traces Input: thousandeyes_splunk_app/test_traces_stream_input.md
 
 theme:
   name: material
