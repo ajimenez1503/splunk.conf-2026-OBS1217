@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#stream-thousandeyes-alerts-to-splunk-enterprise" class="md-skip">
+        <a href="#stream-thousandeyes-alerts-to-splunk-core" class="md-skip">
           Skip to content
         </a>
       
@@ -1146,10 +1146,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#validate-alerts-in-splunk-enterprise" class="md-nav__link">
+  <a href="#validate-alerts-in-splunk-core" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Validate alerts in Splunk Enterprise
+        Validate alerts in Splunk Core
       
     </span>
   </a>
@@ -1365,8 +1365,8 @@
   
 
 
-<h1 id="stream-thousandeyes-alerts-to-splunk-enterprise">Stream ThousandEyes Alerts to Splunk Enterprise</h1>
-<p>This guide shows how to send ThousandEyes alert notifications to Splunk Enterprise using a <strong>Custom Webhook</strong> integration.</p>
+<h1 id="stream-thousandeyes-alerts-to-splunk-core">Stream ThousandEyes Alerts to Splunk Core</h1>
+<p>This guide shows how to send ThousandEyes alert notifications to Splunk Core using a <strong>Custom Webhook</strong> integration.</p>
 <h2 id="create-a-custom-webhook-connector">Create a Custom Webhook connector</h2>
 <ul>
 <li>Navigate to <code>Manage</code> &gt; <code>Integrations</code> &gt; <code>Integrations 2.0</code> &gt; <code>Integration Templates</code></li>
@@ -1406,8 +1406,8 @@
 <li>Click <strong>Save</strong></li>
 </ul>
 <p><img alt="Manage Alert Rules" src="../../img/thousandeyes/te_manage_alert_rules.png" /></p>
-<h2 id="validate-alerts-in-splunk-enterprise">Validate alerts in Splunk Enterprise</h2>
-<p>When an alert is triggered, search for the event in Splunk Enterprise:</p>
+<h2 id="validate-alerts-in-splunk-core">Validate alerts in Splunk Core</h2>
+<p>When an alert is triggered, search for the event in Splunk Core:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>index=&quot;*&quot; eventType=&quot;THOUSANDEYES_ALERT_NOTIFICATION&quot;
 </span></code></pre></div>
 <p>Key fields to review:</p>
