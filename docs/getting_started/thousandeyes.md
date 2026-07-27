@@ -27,12 +27,13 @@ To learn more about Page Load tests, check the [Page Load Test documentation](ht
 
 ### Configure Test
 
-For this workshop, we will need only Basic section:
+For this workshop, we will need only the Basic section:
+
 - **URL**: Enter `https://www.cisco.com/`
 - **Frequency**: Leave it at 1 minute
-- **Test location**: Click `Select Agents` and select 1 or 2 _Cloud Agents_. (e.g., Denver and Edinburgh)
-- **Alerts**: By default you should have 4 or 5 default alerts, leave them all enabled
-- **Test Name**: Enter a unique descriptive name that includes your participant number of your initials
+- **Test location**: Click `Select Agents` and select 1 or 2 _Cloud Agents_ (e.g., Denver and Edinburgh)
+- **Alerts**: All enabled
+- **Test Name**: Enter a unique descriptive name that includes your participant number or your initials
 - Click `Deploy`
 
 ![config Page Load Test](../img/thousandeyes/te_config_page_load_test.png)
