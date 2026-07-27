@@ -12,13 +12,13 @@
         <meta name="author" content="Antonio Jimenez">
       
       
-        <link rel="canonical" href="https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/splunk_core/visualize_metrics_in_splunk_cloud_enterprise/">
+        <link rel="canonical" href="https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/splunk_core/stream_alerts_to_splunk_core_webhook/">
       
       
-        <link rel="prev" href="../create_logs_stream_to_splunk_cloud_enterprise/">
+        <link rel="prev" href="../visualize_logs_in_splunk_core/">
       
       
-        <link rel="next" href="../visualize_logs_in_splunk_cloud_enterprise/">
+        <link rel="next" href="../../thousandeyes_splunk_app/authenticate_thousandeyes_user/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Visualize ThousandEyes Metrics in Splunk Core - .conf26 OBS1217 - Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk</title>
+        <title>Stream ThousandEyes Alerts to Splunk Core - .conf26 OBS1217 - Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#visualize-thousandeyes-metrics-in-splunk-cloud-platform-or-splunk-enterprise" class="md-skip">
+        <a href="#stream-thousandeyes-alerts-to-splunk-enterprise" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Visualize ThousandEyes Metrics in Splunk Core
+              Stream ThousandEyes Alerts to Splunk Core
             
           </span>
         </div>
@@ -309,7 +309,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../create_metrics_stream_to_splunk_cloud_enterprise/" class="md-tabs__link">
+        <a href="../create_metrics_stream_to_splunk_core/" class="md-tabs__link">
           
   
   
@@ -941,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../create_metrics_stream_to_splunk_cloud_enterprise/" class="md-nav__link">
+      <a href="../create_metrics_stream_to_splunk_core/" class="md-nav__link">
         
   
   
@@ -969,7 +969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../create_logs_stream_to_splunk_cloud_enterprise/" class="md-nav__link">
+      <a href="../create_logs_stream_to_splunk_core/" class="md-nav__link">
         
   
   
@@ -977,6 +977,62 @@
     
   
     Create a Logs Stream to Splunk Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visualize_metrics_in_splunk_core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualize ThousandEyes Metrics in Splunk Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visualize_logs_in_splunk_core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualize ThousandEyes Logs in Splunk Core
   
 
     
@@ -1006,6 +1062,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stream ThousandEyes Alerts to Splunk Core
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1013,7 +1087,7 @@
   <span class="md-ellipsis">
     
   
-    Visualize ThousandEyes Metrics in Splunk Core
+    Stream ThousandEyes Alerts to Splunk Core
   
 
     
@@ -1023,34 +1097,69 @@
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../visualize_logs_in_splunk_cloud_enterprise/" class="md-nav__link">
         
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  <span class="md-ellipsis">
+  
     
   
-    Visualize ThousandEyes Logs in Splunk Core
   
-
-    
-  </span>
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-custom-webhook-connector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create a Custom Webhook connector
+      
+    </span>
+  </a>
   
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create the operation
+      
+    </span>
+  </a>
   
-
-      </a>
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attach-alert-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attach alert rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validate-alerts-in-splunk-enterprise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validate alerts in Splunk Enterprise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1284,43 +1393,59 @@
   
 
 
-<h1 id="visualize-thousandeyes-metrics-in-splunk-cloud-platform-or-splunk-enterprise">Visualize ThousandEyes Metrics in Splunk Cloud Platform or Splunk Enterprise</h1>
+<h1 id="stream-thousandeyes-alerts-to-splunk-enterprise">Stream ThousandEyes Alerts to Splunk Enterprise</h1>
+<p>This guide shows how to send ThousandEyes alert notifications to Splunk Enterprise using a <strong>Custom Webhook</strong> integration.</p>
+<h2 id="create-a-custom-webhook-connector">Create a Custom Webhook connector</h2>
 <ul>
-<li>In the initial page of Splunk page</li>
-<li>Navigate to <code>Search &amp; Reporting</code>
-<img alt="Search" src="../../img/splunk_core/search.png" /></li>
+<li>Navigate to <code>Manage</code> &gt; <code>Integrations</code> &gt; <code>Integrations 2.0</code> &gt; <code>Integration Templates</code></li>
+<li>Select <strong>Custom Webhook</strong></li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Data may not be ready - Wait a few minutes</p>
-<p>The telemetry needs to be generated by the application and send to Splunk. This may take a few minutes.</p>
-</div>
+<p><img alt="Custom Webhook template" src="../../img/thousandeyes/te_custom_webhook_template.png" /></p>
 <ul>
-<li>In the search bar, enter the following query to retrieve ThousandEyes Latency metric:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>index=&quot;*&quot; source=&quot;ThousandEyesOTel&quot; | timechart avg(&quot;metric_name:network.latency&quot;) as &quot;Avg&quot; span=60s
-</span></code></pre></div></li>
-<li>Click on the <code>Visualization</code> tab to change the chart type to <code>Line Chart</code></li>
-<li>
-<p><img alt="search Latency" src="../../img/splunk_core/searchLatency.png" /></p>
-</li>
-<li>
-<p>In the search bar, enter the following query to retrieve ThousandEyes availability metric:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>index=&quot;*&quot; source=&quot;ThousandEyesOTel&quot; | timechart avg(&quot;metric_name:http.server.request.availability&quot;) as &quot;Avg&quot; span=60s
-</span></code></pre></div></p>
-</li>
-<li>Click on the <code>Visualization</code> tab to change the chart type to <code>Line Chart</code></li>
-</ul>
-<p><img alt="search Availability" src="../../img/splunk_core/searchAvailability.png" /></p>
-<ul>
-<li>Now you have the options to:<ul>
-<li>Create alerts based on the search results</li>
-<li>Save the search as a report</li>
-<li>Create a dashboard panel</li>
-<li>Export the results in various formats (CSV, JSON, etc.)</li>
-<li>Correlate the data with other metrics in Splunk</li>
-<li>Apply AIOps to analyze the data further</li>
+<li>Configure the connector:<ul>
+<li><code>Name</code>: a descriptive name (e.g., <code>Splunk Alerts</code>)</li>
+<li><code>Target</code>: <code>https://&lt;host&gt;:8088/services/collector/event</code></li>
+<li><code>Auth Type</code>: <strong>Custom</strong></li>
+<li><code>Custom Headers</code>: <code>Authorization: Splunk &lt;HEC Token&gt;</code></li>
 </ul>
 </li>
+<li>Click <strong>Save &amp; Assign Operation</strong></li>
 </ul>
+<h2 id="create-the-operation">Create the operation</h2>
+<ul>
+<li><code>Operation Name</code>: a descriptive name (e.g., <code>Splunk Alerts Integration</code>)</li>
+<li><code>Preset Configurations</code>: <strong>Splunk</strong></li>
+<li><code>Custom Headers</code>: <code>Content-Type: application/json</code></li>
+<li>Review the Splunk preset payload in the <strong>Body</strong> field</li>
+<li>Click <strong>Test</strong> to verify the integration<ul>
+<li>If the test succeeds, ThousandEyes displays a confirmation message</li>
+<li>If the test fails, verify the HEC target, token, headers, and payload</li>
+</ul>
+</li>
+<li>Click <strong>Save Integration</strong></li>
+</ul>
+<p><img alt="Splunk alert webhook configuration" src="../../img/thousandeyes/te_splunk_alert_webhook_config.png" /></p>
+<h2 id="attach-alert-rules">Attach alert rules</h2>
+<ul>
+<li>Navigate to <code>Manage</code> &gt; <code>Integrations</code> &gt; <code>Integrations 2.0</code> &gt; <code>Operations</code></li>
+<li>Find your Splunk custom webhook operation</li>
+<li>Click the actions menu at the end of the row, then select <strong>Manage Alert Rules</strong></li>
+<li>Select the alert rules you want to send to Splunk</li>
+<li>Click <strong>Save</strong></li>
+</ul>
+<p><img alt="Manage Alert Rules" src="../../img/thousandeyes/te_manage_alert_rules.png" /></p>
+<h2 id="validate-alerts-in-splunk-enterprise">Validate alerts in Splunk Enterprise</h2>
+<p>When an alert is triggered, search for the event in Splunk Enterprise:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>index=&quot;*&quot; eventType=&quot;THOUSANDEYES_ALERT_NOTIFICATION&quot;
+</span></code></pre></div>
+<p>Key fields to review:</p>
+<ul>
+<li><code>eventType</code>: <code>THOUSANDEYES_ALERT_NOTIFICATION</code></li>
+<li><code>thousandeyes_test_id</code></li>
+<li><code>test_description</code></li>
+<li><code>alert</code></li>
+</ul>
+<p><img alt="Splunk alert search results" src="../../img/splunk_core/splunk_alert_search.png" /></p>
 
 
 
@@ -1358,7 +1483,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../create_logs_stream_to_splunk_cloud_enterprise/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create a Logs Stream to Splunk Core">
+          <a href="../visualize_logs_in_splunk_core/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Visualize ThousandEyes Logs in Splunk Core">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1368,20 +1493,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Create a Logs Stream to Splunk Core
+                Visualize ThousandEyes Logs in Splunk Core
               </div>
             </div>
           </a>
         
         
           
-          <a href="../visualize_logs_in_splunk_cloud_enterprise/" class="md-footer__link md-footer__link--next" aria-label="Next: Visualize ThousandEyes Logs in Splunk Core">
+          <a href="../../thousandeyes_splunk_app/authenticate_thousandeyes_user/" class="md-footer__link md-footer__link--next" aria-label="Next: Authenticate the ThousandEyes User">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Visualize ThousandEyes Logs in Splunk Core
+                Authenticate the ThousandEyes User
               </div>
             </div>
             <div class="md-footer__button md-icon">

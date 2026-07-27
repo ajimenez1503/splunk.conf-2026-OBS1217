@@ -12,9 +12,13 @@
         <meta name="author" content="Antonio Jimenez">
       
       
-        <link rel="canonical" href="https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/splunk_core/stream_alerts_to_splunk_enterprise_webhook/">
+        <link rel="canonical" href="https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/splunk_core/create_logs_stream_to_splunk_core/">
       
       
+        <link rel="prev" href="../create_metrics_stream_to_splunk_core/">
+      
+      
+        <link rel="next" href="../visualize_metrics_in_splunk_core/">
       
       
         
@@ -25,7 +29,7 @@
     
     
       
-        <title>Stream ThousandEyes Alerts to Splunk Enterprise - .conf26 OBS1217 - Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk</title>
+        <title>Create a Logs Stream to Splunk Core - .conf26 OBS1217 - Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk</title>
       
     
     
@@ -76,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#stream-thousandeyes-alerts-to-splunk-enterprise" class="md-skip">
+        <a href="#create-a-logs-stream-on-thousandeyes-for-splunk-cloud-platform-or-splunk-enterprise" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Stream ThousandEyes Alerts to Splunk Enterprise
+              Create a Logs Stream to Splunk Core
             
           </span>
         </div>
@@ -299,11 +303,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../create_metrics_stream_to_splunk_cloud_enterprise/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../create_metrics_stream_to_splunk_core/" class="md-tabs__link">
           
   
   
@@ -875,28 +881,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -914,7 +923,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -932,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../create_metrics_stream_to_splunk_cloud_enterprise/" class="md-nav__link">
+      <a href="../create_metrics_stream_to_splunk_core/" class="md-nav__link">
         
   
   
@@ -957,10 +966,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../create_logs_stream_to_splunk_cloud_enterprise/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create a Logs Stream to Splunk Core
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -976,6 +1012,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-connector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create a Connector
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-an-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create an Operation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -988,7 +1066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../visualize_metrics_in_splunk_cloud_enterprise/" class="md-nav__link">
+      <a href="../visualize_metrics_in_splunk_core/" class="md-nav__link">
         
   
   
@@ -1016,7 +1094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../visualize_logs_in_splunk_cloud_enterprise/" class="md-nav__link">
+      <a href="../visualize_logs_in_splunk_core/" class="md-nav__link">
         
   
   
@@ -1024,6 +1102,34 @@
     
   
     Visualize ThousandEyes Logs in Splunk Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stream_alerts_to_splunk_core_webhook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stream ThousandEyes Alerts to Splunk Core
   
 
     
@@ -1265,59 +1371,42 @@
   
 
 
-<h1 id="stream-thousandeyes-alerts-to-splunk-enterprise">Stream ThousandEyes Alerts to Splunk Enterprise</h1>
-<p>This guide shows how to send ThousandEyes alert notifications to Splunk Enterprise using a <strong>Custom Webhook</strong> integration.</p>
-<h2 id="create-a-custom-webhook-connector">Create a Custom Webhook connector</h2>
+<h1 id="create-a-logs-stream-on-thousandeyes-for-splunk-cloud-platform-or-splunk-enterprise">Create a Logs Stream on ThousandEyes for Splunk Cloud Platform or Splunk Enterprise</h1>
+<p>Use the ThousandEyes web interface to create the integration manually using Integrations 2.0.</p>
 <ul>
-<li>Navigate to <code>Manage</code> &gt; <code>Integrations</code> &gt; <code>Integrations 2.0</code> &gt; <code>Integration Templates</code></li>
-<li>Select <strong>Custom Webhook</strong></li>
+<li>Navigate to <code>Manage</code> &gt; <code>Integrations</code> &gt; <code>Integrations 2.0</code></li>
 </ul>
-<p><img alt="Custom Webhook template" src="../../img/thousandeyes/te_custom_webhook_template.png" /></p>
+<h3 id="create-a-connector">Create a Connector</h3>
 <ul>
-<li>Configure the connector:<ul>
-<li><code>Name</code>: a descriptive name (e.g., <code>Splunk Alerts</code>)</li>
-<li><code>Target</code>: <code>https://&lt;host&gt;:8088/services/collector/event</code></li>
-<li><code>Auth Type</code>: <strong>Custom</strong></li>
-<li><code>Custom Headers</code>: <code>Authorization: Splunk &lt;HEC Token&gt;</code></li>
+<li>Click <code>+ New Connector</code> to select the type of connector to configure<ul>
+<li>Splunk Enterprise: <code>Splunk Enterprise HEC</code></li>
 </ul>
 </li>
-<li>Click <strong>Save &amp; Assign Operation</strong></li>
-</ul>
-<h2 id="create-the-operation">Create the operation</h2>
-<ul>
-<li><code>Operation Name</code>: a descriptive name (e.g., <code>Splunk Alerts Integration</code>)</li>
-<li><code>Preset Configurations</code>: <strong>Splunk</strong></li>
-<li><code>Custom Headers</code>: <code>Content-Type: application/json</code></li>
-<li>Review the Splunk preset payload in the <strong>Body</strong> field</li>
-<li>Click <strong>Test</strong> to verify the integration<ul>
-<li>If the test succeeds, ThousandEyes displays a confirmation message</li>
-<li>If the test fails, verify the HEC target, token, headers, and payload</li>
+<li>Configure Connector Settings    <ul>
+<li><code>Name</code>: A name for your connector (e.g., "Splunk Core Integration")</li>
+<li><code>Target</code>: The target URL of the integration: <code>https://&lt;host&gt;:8088/services/collector/event</code></li>
+<li><code>Token</code>: Enter your Splunk HEC token</li>
 </ul>
 </li>
-<li>Click <strong>Save Integration</strong></li>
+<li>Click <code>Save &amp; Assign Operation</code> to save the connector</li>
 </ul>
-<p><img alt="Splunk alert webhook configuration" src="../../img/thousandeyes/te_splunk_alert_webhook_config.png" /></p>
-<h2 id="attach-alert-rules">Attach alert rules</h2>
+<p><img alt="Create Splunk Core Connector" src="../../img/thousandeyes/create_splunk_core_connector.png" /></p>
+<h3 id="create-an-operation">Create an Operation</h3>
 <ul>
-<li>Navigate to <code>Manage</code> &gt; <code>Integrations</code> &gt; <code>Integrations 2.0</code> &gt; <code>Operations</code></li>
-<li>Find your Splunk custom webhook operation</li>
-<li>Click the actions menu at the end of the row, then select <strong>Manage Alert Rules</strong></li>
-<li>Select the alert rules you want to send to Splunk</li>
-<li>Click <strong>Save</strong></li>
+<li>Click <code>+ New Operation</code> to open the menu for selecting the operation type</li>
+<li>Choose <code>Splunk Enterprise</code> to proceed to the configuration form</li>
+<li>Configure Operation Settings<ul>
+<li><code>Operation Name</code>: A name for your operation (e.g., "Splunk Core Logs Integration")</li>
+<li><code>Signal</code>: <code>logs</code></li>
 </ul>
-<p><img alt="Manage Alert Rules" src="../../img/thousandeyes/te_manage_alert_rules.png" /></p>
-<h2 id="validate-alerts-in-splunk-enterprise">Validate alerts in Splunk Enterprise</h2>
-<p>When an alert is triggered, search for the event in Splunk Enterprise:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>index=&quot;*&quot; eventType=&quot;THOUSANDEYES_ALERT_NOTIFICATION&quot;
-</span></code></pre></div>
-<p>Key fields to review:</p>
-<ul>
-<li><code>eventType</code>: <code>THOUSANDEYES_ALERT_NOTIFICATION</code></li>
-<li><code>thousandeyes_test_id</code></li>
-<li><code>test_description</code></li>
-<li><code>alert</code></li>
+</li>
+<li>Click <code>Save</code></li>
 </ul>
-<p><img alt="Splunk alert search results" src="../../img/splunk_core/splunk_alert_search.png" /></p>
+<p><img alt="Create Splunk Core Operation" src="../../img/thousandeyes/create_splunk_core_logs_operation.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Data Flow Timing</p>
+<p>The stream will begin sending data to your Splunk instance within a few minutes of activation.</p>
+</div>
 
 
 
@@ -1350,6 +1439,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../create_metrics_stream_to_splunk_core/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create a Metrics Stream to Splunk Core">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Create a Metrics Stream to Splunk Core
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../visualize_metrics_in_splunk_core/" class="md-footer__link md-footer__link--next" aria-label="Next: Visualize ThousandEyes Metrics in Splunk Core">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Visualize ThousandEyes Metrics in Splunk Core
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
