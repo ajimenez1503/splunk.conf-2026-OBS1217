@@ -1285,18 +1285,23 @@
 
 
 <h1 id="create-a-trace-streams-on-thousandeyes-for-splunk-observability-cloud">Create a Trace Streams on ThousandEyes for Splunk Observability Cloud</h1>
-<p>Use the ThousandEyes web interface to create the trace stream integration manually via OpenTelemetry.</p>
-<p>To integrate trace streaming from ThousandEyes to Splunk Observability Cloud, follow these steps:</p>
+<p>To create a ThousandEyes Metric Stream Splunk, follow these steps:</p>
 <ul>
-<li>Navigate to <code>Manage</code> &gt; <code>Integrations</code> &gt; <code>Integration 1.0</code></li>
-<li>Click <code>+ New Integration</code> and select <code>OpenTelemetry Integration</code>
-<img alt="opentelemetry integration" src="../img/thousandeyes/opentelemetry_integration.png" /></li>
-<li>Configure the integration settings:<ul>
-<li>Enter a <code>Name</code> for the integration (e.g., "Splunk Observability Cloud Trace Integration")</li>
+<li>Navigate to <code>Manage</code> -&gt; <code>Integrations</code> -&gt; <code>Integration 1.0</code></li>
+<li>Click <code>+ New Integration</code> and select <code>OpenTelemetry Integration</code></li>
+</ul>
+<p><img alt="opentelemetry integration" src="../../img/thousandeyes/te_otel_integration_nav.png" /></p>
+<ul>
+<li>
+<p>Configure the integration:</p>
+<ul>
+<li>Enter a <code>Name</code> for the integration (e.g., "OBS1217 - ofushtei - O11y trace stream")</li>
 <li>Set the <code>Target</code> to <code>HTTP</code></li>
-<li>Enter the <code>Endpoint URL</code> to send trace data in <code>OTLP (OpenTelemetry Protocol)</code> format:
-  <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://ingest.us1.signalfx.com/v2/trace/otlp
-</span></code></pre></div></li>
+<li>Enter the <code>Endpoint URL</code> to send OTLP (OpenTelemetry Protocol) data to:</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://ingest.us1.signalfx.com/v2/trace/otlp
+</span></code></pre></div>
+<ul>
 <li>For <code>Preset Configuration</code>, select <code>Splunk Observability Cloud</code></li>
 <li>For <code>Auth Type</code>, select <code>Custom</code></li>
 <li>Set the following <code>Custom Headers</code>:<ul>
@@ -1304,18 +1309,16 @@
 <li><code>Content-Type: application/x-protobuf</code></li>
 </ul>
 </li>
-<li>Select <code>Trace</code> as the OpenTelemetry <code>Signal</code></li>
+<li>Select <code>Trace</code> as the <code>OpenTelemetry Signal</code></li>
 <li>Select <code>v2</code> as the <code>Data Model Version</code></li>
-<li>For <code>Network &amp; App Synthetic</code>, select a the test that you want to stream data from</li>
-</ul>
-</li>
+<li>In <code>Network &amp; App Synthetic</code> dropdown, select the test you created earlier</li>
 <li>Click <code>Save</code></li>
 </ul>
+</li>
+</ul>
 <p><img alt="Create OpenTelemetry trace integration" src="../../img/thousandeyes/create_opentelemetry_trace_integration.png" /></p>
-<div class="admonition note">
-<p class="admonition-title">Receiving trace data</p>
-<p>The trace stream will begin sending distributed tracing data to Splunk Observability Cloud in a couple of minutes. You can view these traces in the APM section of Splunk Observability Cloud.</p>
-</div>
+<p>Please note, it will take a couple of minutes for the trace stream to start. 
+You can view traces in the APM section of Splunk Observability Cloud.</p>
 
 
 
