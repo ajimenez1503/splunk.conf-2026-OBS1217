@@ -638,10 +638,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#identify-host-of-your-splunk-instance" class="md-nav__link">
+  <a href="#identify-the-hostname-of-your-splunk-instance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Identify HOST of your Splunk instance
+        Identify the hostname of your Splunk instance
       
     </span>
   </a>
@@ -760,7 +760,7 @@
   <span class="md-ellipsis">
     
   
-    Create ThousandEyes HTTP Test
+    Create ThousandEyes HTTP Server Test
   
 
     
@@ -1417,9 +1417,13 @@
 <li>Find the existing <code>thousandeyes_hec</code> token and copy the token value</li>
 </ul>
 <p><img alt="Hec Token" src="../../img/splunk_core/splunk_copy_hec_token.png" /></p>
-<h2 id="identify-host-of-your-splunk-instance">Identify HOST of your Splunk instance</h2>
-<p>The host is typically the server name or IP address where Splunk is installed.
-For example, if you Splunk web page is <code>https://conf26-obs1217-001.splunk.show</code>, your host will be: <code>conf26-obs1217-001</code></p>
+<h2 id="identify-the-hostname-of-your-splunk-instance">Identify the hostname of your Splunk instance</h2>
+<p>Use the complete hostname shown in your Splunk Web URL.</p>
+<p>For example, if your Splunk Web URL is
+<code>https://conf26-obs1217-001.splunk.show</code>, use
+<code>conf26-obs1217-001.splunk.show</code> as <code>&lt;host&gt;</code> when configuring the HEC target:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://&lt;host&gt;:8088/services/collector/event
+</span></code></pre></div>
 
 
 
