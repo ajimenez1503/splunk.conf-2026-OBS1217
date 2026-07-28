@@ -1,6 +1,6 @@
 # View the Service Map in Splunk Observability
 
-Under `Network & App Synthetics` -> `Views`, you can select your  HTTP Test to view.
+Under `Network & App Synthetics` -> `Views`, select your HTTP Server test.
 
 ![HTTP Server View](../../img/thousandeyes/http_server_view.png)
 

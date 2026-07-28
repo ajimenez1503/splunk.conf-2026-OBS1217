@@ -5,7 +5,7 @@
 
 **ThousandEyes Network monitoring** dashboard is already created in the Splunk Observability Cloud instance.
 
-- Log in to the [Splunk Observability Cloud](../../getting_started/login_splunk_observability.md)
+- Log in to the [Splunk Observability Cloud](../getting_started/login_splunk_observability.md)
 - From the landing page, navigate to `Dashboards`
 - In `Custom dashboard groups`, click on `ThousandEyes Network monitoring` and select `Application` from the dropdown
 

@@ -24,5 +24,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Validate documentation
+        run: mkdocs build --strict
+
       - name: Deploy to gh-pages branch
         run: mkdocs gh-deploy --force

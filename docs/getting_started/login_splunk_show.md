@@ -51,7 +51,14 @@ We will use HTTP Event Collector (HEC) to get data from Thousand eyes. A token i
 
 ![Hec Token](../img/splunk_core/splunk_copy_hec_token.png)
 
-## Identify HOST of your Splunk instance
+## Identify the hostname of your Splunk instance
 
-The host is typically the server name or IP address where Splunk is installed.
-For example, if you Splunk web page is `https://conf26-obs1217-001.splunk.show`, your host will be: `conf26-obs1217-001`
+Use the complete hostname shown in your Splunk Web URL.
+
+For example, if your Splunk Web URL is
+`https://conf26-obs1217-001.splunk.show`, use
+`conf26-obs1217-001.splunk.show` as `<host>` when configuring the HEC target:
+
+```text
+https://<host>:8088/services/collector/event
+```

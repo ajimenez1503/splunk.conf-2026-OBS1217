@@ -2,10 +2,10 @@
 
 To create a ThousandEyes Metric Stream Splunk, follow these steps:
 
-- Navigate to `Manage` -> `Integrations` -> `Integration 1.0`
+- Navigate to `Manage` -> `Integrations` -> `Integrations 1.0`
 - Click `+ New Integration` and select `ThousandEyes for OpenTelemetry`
 
-![opentelemetry integration](../img/thousandeyes/te_otel_integration_nav.png)
+![ThousandEyes for OpenTelemetry integration](../img/thousandeyes/te_otel_integration_nav.png)
 
 - Configure the integration:
     - Enter a `Name` for the integration (e.g., "OBS1217 - ofushtei - O11y metric stream")

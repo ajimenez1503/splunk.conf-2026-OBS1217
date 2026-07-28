@@ -2,7 +2,7 @@
 
 ## Navigate to the APM page
 
-- Log in to the [Splunk Observability Cloud](../../getting_started/login_splunk_observability.md)
+- Log in to the [Splunk Observability Cloud](../getting_started/login_splunk_observability.md)
 - From the landing page, navigate to `APM` -> `Trace Analyzer`
 
 ![Trace view](../img/splunk_observability/o11y_apm_nav.png)
@@ -29,4 +29,3 @@
     - ThousandEyes identification: account, test, agent, stream
 
         ![span thousandeyes details](../img/splunk_observability/o11y_trace_details_2.png)
-
