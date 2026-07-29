@@ -6,6 +6,7 @@ The integration enables you to ingest test data, send alert notifications, and v
 ## Prerequisites
 
 To integrate ITSI and ThousandEyes, you need the following:
+
 - Splunk ITSI version 4.20.x or later
 - Cisco ThousandEyes App for Splunk verstion 0.1.0 or later
 - Splunk App for Content Packs version 2.3.0 or later, including 2 Content Packs:
