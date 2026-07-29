@@ -1372,6 +1372,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configure ThousandEyes content pack
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1388,6 +1406,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-and-configure-content-pack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install and Configure content pack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validate-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validate installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1450,7 +1509,8 @@
 
 
 <h1 id="configure-the-content-pack-for-cisco-thousandeyes">Configure the Content Pack for Cisco ThousandEyes</h1>
-<p>To the Content Pack for Cisco ThousandEyes, do the following:
+<h2 id="install-and-configure-content-pack">Install and Configure content pack</h2>
+<p>To install and configure the Content Pack for Cisco ThousandEyes, do the following:
 - Navigate to <code>ITSI</code> -&gt; <code>Configuration</code> -&gt; <code>Data Integratiions</code> -&gt; <code>Content Library</code>
 - Select <code>Cisco ThousandEyes</code> from the list
 - Follow the steps from the official ThousandEyes documentation: <a href="https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app/itsi#install-the-content-pack-for-cisco-thousandeyes">Splunk ITSI Integration # Install the Content Pack for Cisco ThousandEyes</a>
@@ -1460,10 +1520,12 @@
     - Click <code>Activate all saved searches</code>
     - Click <code>Backfill service KPIs</code>
     - Click <code>Install selected</code>
-    - In the confirmation dialog, click <code>Install</code>
-- To validate the installation, go to <code>Service Analyzer</code> -&gt; <code>Default Analyzer</code>
-    - Filter services by the prefix you specified during the configuration
-    - If you don't see results, try extending the time range</p>
+    - In the confirmation dialog, click <code>Install</code></p>
+<h2 id="validate-installation">Validate installation</h2>
+<p>To validate your installation:
+- To to <code>Service Analyzer</code> -&gt; <code>Default Analyzer</code>:
+- Filter services by the prefix you specified during the configuration
+- If you don't see results, try extending the time range</p>
 
 
 
