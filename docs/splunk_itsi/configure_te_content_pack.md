@@ -13,12 +13,16 @@ To install and configure the Content Pack for Cisco ThousandEyes, do the followi
     - Click `Activate all saved searches`
     - Click `Backfill service KPIs`
     - Click `Install selected`
-    - In the confirmation dialog, click `Install`
+    - In the confirmation dialogue, click `Install`
+
+![Search traces](../img/itsi/itsi_te_pack_config.png)
 
 ## Validate installation
 
 To validate your installation:
 
-- To to `Service Analyzer` -> `Default Analyzer`:
+- Go to `Service Analyzer` -> `Default Analyzer`:
 - Filter services by the prefix you specified during the configuration
 - If you don't see results, try extending the time range
+
+![Search traces](../img/itsi/itsi_te_validation.png)
