@@ -28,4 +28,5 @@ To create a ThousandEyes Metric Stream Splunk, follow these steps:
 
 ![Create OpenTelemetry metric integration](../img/thousandeyes/te_otel_metric_config.png)
 
-Please note, it will take a couple of minutes for the metric stream to start, so while you wait, you can move onto the next topic.
+!!! note "Data may not be ready - Wait a few minutes" 
+    Please note, it will take a couple of minutes for the metric stream to start, so while you wait, you can move onto the next topic.
