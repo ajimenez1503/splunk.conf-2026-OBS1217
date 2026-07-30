@@ -3,6 +3,7 @@
 ## Install and Configure content pack
 
 To install and configure the Content Pack for Cisco ThousandEyes, do the following:
+
 - Navigate to `ITSI` -> `Configuration` -> `Data Integratiions` -> `Content Library`
 - Select `Cisco ThousandEyes` from the list
 - Follow the steps from the official ThousandEyes documentation: [Splunk ITSI Integration # Install the Content Pack for Cisco ThousandEyes](https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app/itsi#install-the-content-pack-for-cisco-thousandeyes)
@@ -12,11 +13,16 @@ To install and configure the Content Pack for Cisco ThousandEyes, do the followi
     - Click `Activate all saved searches`
     - Click `Backfill service KPIs`
     - Click `Install selected`
-    - In the confirmation dialog, click `Install`
+    - In the confirmation dialogue, click `Install`
+
+![Search traces](../img/itsi/itsi_te_pack_config.png)
 
 ## Validate installation
 
 To validate your installation:
-- To to `Service Analyzer` -> `Default Analyzer`:
+
+- Go to `Service Analyzer` -> `Default Analyzer`:
 - Filter services by the prefix you specified during the configuration
 - If you don't see results, try extending the time range
+
+![Search traces](../img/itsi/itsi_te_validation.png)
