@@ -28,5 +28,6 @@ To create a ThousandEyes trace stream for Splunk Observability Cloud, follow the
 
 ![Create OpenTelemetry trace integration](../img/thousandeyes/te_otel_trace_config.png)
 
-Please note, it will take a couple of minutes for the trace stream to start. 
-You can view traces in the APM section of Splunk Observability Cloud.
+!!! note "Data may not be ready - Wait a few minutes" 
+    Please note, it will take a couple of minutes for the trace stream to start. 
+    You can view traces in the APM section of Splunk Observability Cloud.

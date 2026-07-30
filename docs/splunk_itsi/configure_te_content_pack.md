@@ -1,4 +1,10 @@
-# Configure the Content Pack for Cisco ThousandEyes
+# Stream ThousandEyes Test Data to Splunk ITSI
+
+## Prerequisites
+
+By default, this integration expects you to ingest ThousandEyes Metrics via Cisco ThousandEyes App.
+
+If you didn't complete this by now, please follow the [workshop](../thousandeyes_splunk_app/test_metrics_stream_input.md) guide or [official documentation](https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app/itsi#stream-thousandeyes-test-data-to-splunk-itsi)
 
 ## Install and Configure content pack
 
