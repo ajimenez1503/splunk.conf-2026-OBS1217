@@ -1512,15 +1512,19 @@
 <p>This guide explains how to integrate Cisco ThousandEyes with Splunk IT Service Intelligence.
 The integration enables you to ingest test data, send alert notifications, and visualize Splunk episodes directly in ThousandEyes.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>To integrate ITSI and ThousandEyes, you need the following:
-- Splunk ITSI version 4.20.x or later
-- Cisco ThousandEyes App for Splunk verstion 0.1.0 or later
-- Splunk App for Content Packs version 2.3.0 or later, including 2 Content Packs:
-    - ITSI Monitoring and Alerting
-    - Cisco ThousandEyes </p>
+<p>To start integrating ITSI and ThousandEyes, your Splunk environment needs to fulfil a few prerequisites</p>
+<ul>
+<li>Splunk ITSI version 4.20.x or later</li>
+<li>Cisco ThousandEyes App for Splunk version 0.1.0 or later</li>
+<li>Splunk App for Content Packs version 2.3.0 or later, including 2 Content Packs:<ul>
+<li>ITSI Monitoring and Alerting</li>
+<li>Cisco ThousandEyes </li>
+</ul>
+</li>
+</ul>
 <p>Luckily for you, everything is already installed</p>
 <h2 id="update-the-index-used-by-the-content-pack">Update the Index Used by the Content Pack</h2>
-<p>If your data stream does not use the thousandeyes index, you need update the content pack's search macro to match your selected index. And during our workshop, we used <code>thousandeyes_data</code> index.</p>
+<p>If your data stream does not use the default <code>thousandeyes</code> index, you need to update the content pack's search macro to match your selected index. And during our workshop, we used <code>thousandeyes_data</code> index.</p>
 <ul>
 <li>From the Splunk Enterprise main menu, select <code>Settings</code>, then <code>Advanced Search</code></li>
 <li>Select <code>Search Macros</code></li>

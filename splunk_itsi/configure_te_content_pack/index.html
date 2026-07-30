@@ -1510,22 +1510,30 @@
 
 <h1 id="configure-the-content-pack-for-cisco-thousandeyes">Configure the Content Pack for Cisco ThousandEyes</h1>
 <h2 id="install-and-configure-content-pack">Install and Configure content pack</h2>
-<p>To install and configure the Content Pack for Cisco ThousandEyes, do the following:
-- Navigate to <code>ITSI</code> -&gt; <code>Configuration</code> -&gt; <code>Data Integratiions</code> -&gt; <code>Content Library</code>
-- Select <code>Cisco ThousandEyes</code> from the list
-- Follow the steps from the official ThousandEyes documentation: <a href="https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app/itsi#install-the-content-pack-for-cisco-thousandeyes">Splunk ITSI Integration # Install the Content Pack for Cisco ThousandEyes</a>
-    - Click <code>Proceed</code>
-    - Add all objects (both <code>New</code> and <code>Already installed</code>)
-    - Click <code>Import as enabled</code>
-    - Click <code>Activate all saved searches</code>
-    - Click <code>Backfill service KPIs</code>
-    - Click <code>Install selected</code>
-    - In the confirmation dialog, click <code>Install</code></p>
+<p>To install and configure the Content Pack for Cisco ThousandEyes, do the following:</p>
+<ul>
+<li>Navigate to <code>ITSI</code> -&gt; <code>Configuration</code> -&gt; <code>Data Integratiions</code> -&gt; <code>Content Library</code></li>
+<li>Select <code>Cisco ThousandEyes</code> from the list</li>
+<li>Follow the steps from the official ThousandEyes documentation: <a href="https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app/itsi#install-the-content-pack-for-cisco-thousandeyes">Splunk ITSI Integration # Install the Content Pack for Cisco ThousandEyes</a><ul>
+<li>Click <code>Proceed</code></li>
+<li>Add all objects (both <code>New</code> and <code>Already installed</code>)</li>
+<li>Click <code>Import as enabled</code></li>
+<li>Click <code>Activate all saved searches</code></li>
+<li>Click <code>Backfill service KPIs</code></li>
+<li>Click <code>Install selected</code></li>
+<li>In the confirmation dialogue, click <code>Install</code></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Search traces" src="../../img/itsi/itsi_te_pack_config.png" /></p>
 <h2 id="validate-installation">Validate installation</h2>
-<p>To validate your installation:
-- To to <code>Service Analyzer</code> -&gt; <code>Default Analyzer</code>:
-- Filter services by the prefix you specified during the configuration
-- If you don't see results, try extending the time range</p>
+<p>To validate your installation:</p>
+<ul>
+<li>Go to <code>Service Analyzer</code> -&gt; <code>Default Analyzer</code>:</li>
+<li>Filter services by the prefix you specified during the configuration</li>
+<li>If you don't see results, try extending the time range</li>
+</ul>
+<p><img alt="Search traces" src="../../img/itsi/itsi_te_validation.png" /></p>
 
 
 
