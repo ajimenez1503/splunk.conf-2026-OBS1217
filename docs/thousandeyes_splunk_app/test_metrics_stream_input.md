@@ -1,23 +1,28 @@
 ## Create a Test Stream - Metrics Input
 
-- In `inputs` section
+To configure the ThousandEyes Test Metrics stream, follow these steps:
+
+- From the Splunk App, to go `Inputs` section
 - Click `Create New Input`, select `Test Stream - Metrics`
 - Fill the form:
-    - Name: unique name
-    - ThousandEyes User: select you user
-    - Account Group: select your account
-    - HEC Target: The HEC target of your Splunk instance. Example: `https://<host>:8088/services/collector/event`
-    - Cloud & Enterprise Agent Tests: select your HTTP Server test
-    - HEC Token: select `ThousandEyesToken`
-    - Test Index: select `default`
+    - Name: enter a unique name for your input
+    - ThousandEyes User: select your user
+    - Account Group: select your account group
+    - HEC Target: enter the HEC target of your Splunk instance. Example: `https://<host>:8088/services/collector/event`
+    - Cloud & Enterprise Agent Tests: select your ThousandEyes Test
+    - HEC Token: select `thousandeyes_hec`
+    - Test Index: select `thousandeyes_data`
 
-![stream Input](../img/thousandeyes_splunk_app/inputTestsMetricsStream.png)
+![stream Input](../img/thousandeyes_splunk_app/splunk_te_app_metrics_config.png)
 
 ## Network and Application dashboards
 
-- In the `dashboards` section, select `Network` 
+- In the `Dashboards` section, select `Network` 
+
 ![dashboard_network](../img/thousandeyes_splunk_app/dashboard_network.png)
-- In the `dashboards` section, select `Application`
+
+- In the `Dashboards` section, select `Application`
+
 ![dashboard_application](../img/thousandeyes_splunk_app/dashboard_application.png)
 
 !!! note "Data may not be ready - Wait a few minutes"

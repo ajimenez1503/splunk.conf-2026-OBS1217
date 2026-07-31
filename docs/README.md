@@ -9,4 +9,4 @@ During this workshop you will learn about:
 - [**Streaming ThousandEyes data to Splunk Core**](getting_started/login_splunk_show.md)
 - [**Exploring the capabilities of the Cisco ThousandEyes App for Splunk**](thousandeyes_splunk_app/authenticate_thousandeyes_user.md)
 
-![workflow](img/workflow_diagram.png)
+![workflow](img/workshop_integrations.png)
