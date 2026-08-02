@@ -12,13 +12,13 @@
         <meta name="author" content="Antonio Jimenez, Oleksii Fushtei">
       
       
-        <link rel="canonical" href="https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/thousandeyes_splunk_app/alerts_input/">
+        <link rel="canonical" href="https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/thousandeyes_splunk_app/create_activity_logs_input/">
       
       
-        <link rel="prev" href="../activity_logs_input/">
+        <link rel="prev" href="../create_metric_stream_input/">
       
       
-        <link rel="next" href="../../splunk_itsi/itsi_initial_config/">
+        <link rel="next" href="../create_alerts_input/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Create an Alerts Input - .conf26 OBS1217 - Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk</title>
+        <title>Create an Activity Log Input - .conf26 OBS1217 - Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#create-an-alerts-input" class="md-skip">
+        <a href="#create-activity-log-input" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Create an Alerts Input
+              Create an Activity Log Input
             
           </span>
         </div>
@@ -1190,7 +1190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../test_metrics_stream_input/" class="md-nav__link">
+      <a href="../create_metric_stream_input/" class="md-nav__link">
         
   
   
@@ -1198,34 +1198,6 @@
     
   
     Create a Test Stream - Metrics Input
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../activity_logs_input/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Create an Activity Log Input
   
 
     
@@ -1262,7 +1234,7 @@
   <span class="md-ellipsis">
     
   
-    Create an Alerts Input
+    Create an Activity Log Input
   
 
     
@@ -1280,7 +1252,7 @@
   <span class="md-ellipsis">
     
   
-    Create an Alerts Input
+    Create an Activity Log Input
   
 
     
@@ -1306,10 +1278,32 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#alerts-dashboard" class="md-nav__link">
+  <a href="#configure-activity-log-input" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Alerts dashboard
+        Configure Activity Log input
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-activity-in-thousandeyes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generate activity in ThousandEyes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-activity-log-dashboards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        View Activity Log Dashboards
       
     </span>
   </a>
@@ -1320,6 +1314,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create_alerts_input/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create an Alerts Input
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1497,34 +1519,39 @@
   
 
 
-<h1 id="create-an-alerts-input">Create an Alerts Input</h1>
+<h1 id="create-activity-log-input">Create Activity Log Input</h1>
+<h2 id="configure-activity-log-input">Configure Activity Log input</h2>
+<p>To configure ThousandEyes Activity Log stream, follow these steps:</p>
 <ul>
-<li>In the <code>Inputs</code> section, click <code>Create New Input</code> and select <code>Alerts Stream</code>.</li>
-<li>Fill in the form:</li>
-<li>Name: enter a unique name.</li>
-<li>ThousandEyes User: select your user.</li>
-<li>Account Group: select your account group.</li>
-<li>Alert Rules: select one or more alert rules to enable webhook notifications.</li>
-<li>HEC Target: enter the HEC target for your Splunk instance. Example: <code>https://&lt;host&gt;:8088/services/collector/event</code></li>
-<li>HEC Token: select <code>ThousandEyesToken</code>.</li>
-<li>Alerts Index: select <code>default</code>.</li>
-<li>Click <code>Add</code>.</li>
+<li>From the Splunk App, go to <code>Inputs</code> section</li>
+<li>Click <code>Create New Input</code>, select <code>Activity logs Stream</code></li>
+<li>Fill the form:<ul>
+<li>Name: enter a unique name for your input</li>
+<li>ThousandEyes User: select your user</li>
+<li>Account Group: select your account group</li>
+<li>HEC Target: enter the HEC target of your Splunk instance. Example: <code>https://&lt;host&gt;:8088/services/collector/event</code></li>
+<li>HEC Token: select <code>thousandeyes_hec</code></li>
+<li>Activity logs Index: select <code>thousandeyes_data</code></li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Automatic webhook configuration</p>
-<p>The app creates a ThousandEyes webhook operation and a Splunk HEC connector, links them, and updates the selected alert rules to use the webhook for notifications.</p>
-</div>
-<p><img alt="Alerts Stream input configuration" src="../../img/thousandeyes_splunk_app/inputAlertsStream.png" /></p>
-<h2 id="alerts-dashboard">Alerts dashboard</h2>
+</li>
+</ul>
+<p><img alt="Activity Config" src="../../img/thousandeyes_splunk_app/splunk_te_app_activity_config.png" /></p>
+<h2 id="generate-activity-in-thousandeyes">Generate activity in ThousandEyes</h2>
+<p>For the dashboard to have data, we need to generate activities in the ThousandEyes platform, for example:
+  - Log In to the ThousandEyes platform
+  - Create a test
+  - Update a test
+  - Logout from the ThousandEyes platform</p>
+<h2 id="view-activity-log-dashboards">View Activity Log Dashboards</h2>
 <ul>
-<li>Trigger an alert for one of the selected alert rules.</li>
-<li>In the <code>Dashboards</code> section, select <code>Alerts</code>.</li>
+<li>Generate some activity logs in ThousandEyes by creating/deleting tests.</li>
+<li>In the <code>Dashboards</code> section, select <code>Activity Log</code> </li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Data may not be ready - Wait a few minutes</p>
-<p>The alert must be triggered and sent to Splunk before it appears on the dashboard. This may take a few minutes.</p>
+<p>The telemetry needs to be generated by the application and send to Splunk. This may take a few minutes.</p>
 </div>
-<p><img alt="Alerts dashboard" src="../../img/thousandeyes_splunk_app/dashboard_alerts.png" /></p>
+<p><img alt="Dashboard Activity Logs" src="../../img/thousandeyes_splunk_app/splunk_te_app_activity_logs.png" /></p>
 
 
 
@@ -1562,7 +1589,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../activity_logs_input/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create an Activity Log Input">
+          <a href="../create_metric_stream_input/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create a Test Stream - Metrics Input">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1572,20 +1599,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Create an Activity Log Input
+                Create a Test Stream - Metrics Input
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../splunk_itsi/itsi_initial_config/" class="md-footer__link md-footer__link--next" aria-label="Next: Prepate Splunk ITSI">
+          <a href="../create_alerts_input/" class="md-footer__link md-footer__link--next" aria-label="Next: Create an Alerts Input">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Prepate Splunk ITSI
+                Create an Alerts Input
               </div>
             </div>
             <div class="md-footer__button md-icon">
