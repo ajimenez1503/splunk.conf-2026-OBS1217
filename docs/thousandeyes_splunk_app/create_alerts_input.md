@@ -1,4 +1,6 @@
-# Create an Alerts Input
+# Create Alerts Input
+
+## Configure Alerts input
 
 - In the `Inputs` section, click `Create New Input` and select `Alerts Stream`.
 - Fill in the form:
@@ -16,7 +18,7 @@
 
 ![Alerts Stream input configuration](../img/thousandeyes_splunk_app/inputAlertsStream.png)
 
-## Alerts dashboard
+## View Alerts dashboard
 
 - Trigger an alert for one of the selected alert rules.
 - In the `Dashboards` section, select `Alerts`.

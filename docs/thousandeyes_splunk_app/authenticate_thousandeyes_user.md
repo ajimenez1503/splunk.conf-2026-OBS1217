@@ -1,4 +1,4 @@
-## Authenticate the ThousandEyes User
+# Authenticate the ThousandEyes User
 
 To start ingest ThousandEyes data, first you need to authenticate your ThousandEyes user in the Splunk App
 

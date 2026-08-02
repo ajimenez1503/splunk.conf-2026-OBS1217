@@ -4,7 +4,7 @@ Use the ThousandEyes web interface to create the integration manually using Inte
 
 - Navigate to `Manage` > `Integrations` > `Integrations 2.0`
 
-### Create a Connector
+## Create a Connector
 
 - Click `+ New Connector` to select the type of connector to configure
     - Splunk Enterprise: `Splunk Enterprise HEC`
@@ -16,7 +16,7 @@ Use the ThousandEyes web interface to create the integration manually using Inte
 
 ![Create Splunk Core Connector](../img/thousandeyes/create_splunk_core_connector.png)
 
-### Create an Operation
+## Create an Operation
 
 - Click `+ New Operation` to open the menu for selecting the operation type
 - Choose `Splunk Enterprise, Splunk Cloud Platform` to proceed to the configuration form

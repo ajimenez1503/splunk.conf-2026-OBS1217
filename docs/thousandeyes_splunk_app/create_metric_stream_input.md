@@ -1,4 +1,6 @@
-## Create a Test Stream - Metrics Input
+# Create Metrics Stream Input
+
+## Configure Test Metrics Stream input
 
 To configure the ThousandEyes Test Metrics stream, follow these steps:
 
@@ -15,7 +17,7 @@ To configure the ThousandEyes Test Metrics stream, follow these steps:
 
 ![stream Input](../img/thousandeyes_splunk_app/splunk_te_app_metrics_config.png)
 
-## Network and Application dashboards
+## View Network and Application dashboards
 
 - In the `Dashboards` section, select `Network` 
 
