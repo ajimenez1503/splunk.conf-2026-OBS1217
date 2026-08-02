@@ -1,6 +1,6 @@
 # Visualize ThousandEyes Logs in Splunk Core
 
-## Let's generate some logs
+## Generate some activity logs
 - In the ThousandEyes platform:
   - Log In to the ThousandEyes platform
   - Create a test

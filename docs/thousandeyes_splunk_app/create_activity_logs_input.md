@@ -1,4 +1,6 @@
-## Create an Activity Log Input
+# Create Activity Log Input
+
+## Configure Activity Log input
 
 To configure ThousandEyes Activity Log stream, follow these steps:
 
@@ -14,7 +16,15 @@ To configure ThousandEyes Activity Log stream, follow these steps:
 
 ![Activity Config](../img/thousandeyes_splunk_app/splunk_te_app_activity_config.png)
 
-## Activity Log Dashboards
+## Generate activity in ThousandEyes
+
+For the dashboard to have data, we need to generate activities in the ThousandEyes platform, for example:
+  - Log In to the ThousandEyes platform
+  - Create a test
+  - Update a test
+  - Logout from the ThousandEyes platform
+
+## View Activity Log Dashboards
 
 - Generate some activity logs in ThousandEyes by creating/deleting tests.
 - In the `Dashboards` section, select `Activity Log` 
