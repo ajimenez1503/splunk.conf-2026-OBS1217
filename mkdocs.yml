@@ -33,9 +33,9 @@ nav:
     - Stream ThousandEyes Alerts to Splunk Core: splunk_core/stream_alerts_to_splunk_core_webhook.md
   - Cisco ThousandEyes App for Splunk:
     - Authenticate the ThousandEyes User: thousandeyes_splunk_app/authenticate_thousandeyes_user.md
-    - Create a Test Stream - Metrics Input: thousandeyes_splunk_app/test_metrics_stream_input.md
-    - Create an Activity Log Input: thousandeyes_splunk_app/activity_logs_input.md
-    - Create an Alerts Input: thousandeyes_splunk_app/alerts_input.md
+    - Create a Test Stream - Metrics Input: thousandeyes_splunk_app/create_metric_stream_input.md
+    - Create an Activity Log Input: thousandeyes_splunk_app/create_activity_logs_input.md
+    - Create an Alerts Input: thousandeyes_splunk_app/create_alerts_input.md
   - Splunk ITSI:
     - Prepate Splunk ITSI: splunk_itsi/itsi_initial_config.md
     - Configure ThousandEyes content pack: splunk_itsi/configure_te_content_pack.md
