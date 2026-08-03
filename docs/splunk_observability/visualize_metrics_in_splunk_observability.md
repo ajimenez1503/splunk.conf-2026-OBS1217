@@ -1,5 +1,6 @@
 # Visualize ThousandEyes Metrics in Splunk Observability Cloud
 
+In this step you'll view your ThousandEyes test metrics on a pre-built Observability Cloud dashboard, filtered to your own test.
 
 ## Navigate to the Network monitoring dashboard
 
@@ -7,7 +8,8 @@ The **ThousandEyes Network monitoring** dashboard is already created in the Splu
 
 - Log in to [Splunk Observability Cloud](../getting_started/login_splunk_observability.md)
 - From the landing page, navigate to `Dashboards`
-- In `Custom dashboard groups`, click on `ThousandEyes Network monitoring` and select `Application` from the dropdown
+- In `Custom dashboard groups`, open the `ThousandEyes Network monitoring` group
+- From the dashboard dropdown, select the `Application` dashboard
 
 ![dashboards](../img/splunk_observability/o11y_te_dash_nav.png)
 
@@ -24,7 +26,7 @@ If you don't see data immediately, just wait a few minutes. Telemetry needs to b
 
 ![Dashboard Application](../img/splunk_observability/o11y_te_dash_app.png)
 
-**Network dashboards**
+**Network dashboard**
 
 ![Dashboard Network](../img/splunk_observability/o11y_te_dash_network.png)
 
@@ -35,6 +37,6 @@ From this point on, you are free to explore the workshop at your own pace, focus
 
 - If you wish to continue exploring the ThousandEyes & Splunk O11y integration, head over to: [Create Trace Stream to Splunk O11y](../splunk_observability/create_trace_stream_to_splunk_observability.md)
 - To explore how to stream ThousandEyes data to Splunk Core via the official ThousandEyes app, go to: [Configure ThousandEyes App](../thousandeyes_splunk_app/authenticate_thousandeyes_user.md)
-- To discover how to stream data via OpenTelemetry directly from the ThousandEyes platform, go to: [Link/Section](../splunk_core/create_logs_stream_to_splunk_core.md)
+- To discover how to stream data via OpenTelemetry directly from the ThousandEyes platform, go to: [Configure Activity Log Stream](../splunk_core/create_logs_stream_to_splunk_core.md)
 
 **We're here if you need us!**

@@ -1,8 +1,6 @@
 # Authenticate the ThousandEyes User
 
-This guide will walk you through the process of configuring the various inputs of the ThousandEyes App for Splunk.
-
-To start ingesting ThousandEyes data, you first need to authenticate your ThousandEyes user in the Splunk app.
+"This is the first step in configuring the ThousandEyes App for Splunk. To start ingesting ThousandEyes data, you first need to authenticate your ThousandEyes user in the app.
 
 - Open `Cisco ThousandEyes App for Splunk`
 - Navigate to `Configuration` -> `ThousandEyes User`

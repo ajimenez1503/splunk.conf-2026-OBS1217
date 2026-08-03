@@ -1,11 +1,13 @@
 # Create Alerts Input
 
+In this step you'll stream ThousandEyes alerts into Splunk via webhook, so alert notifications land in Splunk in real time for dashboards and downstream ITSI episodes
+
 ## Configure Alerts input
 
 To configure the ThousandEyes Alerts stream, follow these steps:
 
 - From the Splunk App, go to the `Inputs` section
-- Click `Create New Input` and select `Activity logs Stream`
+- Click `Create New Input` and select `Alerts Stream`
 - Fill out the form:
     - Name: Enter a unique name for your input
     - ThousandEyes User: Select your user

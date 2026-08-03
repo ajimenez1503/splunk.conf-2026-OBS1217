@@ -1,5 +1,7 @@
 # Create ThousandEyes Metric Stream for Splunk Observability Cloud
 
+In this step you'll stream ThousandEyes test metrics into Splunk Observability Cloud via OpenTelemetry, so your network and synthetic test data shows up alongside your other Observability Cloud metrics.
+
 To create a ThousandEyes Metric Stream for Splunk Observability Cloud, follow these steps:
 
 - Navigate to `Manage` -> `Integrations` -> `Integrations 1.0`
@@ -16,10 +18,10 @@ To create a ThousandEyes Metric Stream for Splunk Observability Cloud, follow th
       https://ingest.us1.signalfx.com/v2/datapoint/otlp
       ```
 
-    - From the `Preset Configuration` dropdown, select `Splunk Observability Cloud`
+    - For `Preset Configuration`, select `Splunk Observability Cloud`
     - For `Auth Type`, select `Custom`
     - Set the following `Custom Headers`:
-        - `X-SF-Token` to `qc-VZhVaVARLKDPuhBJQfQ`
+        - `X-SF-Token` to `<your-o11y-access-token>`
         - `Content-Type` to `application/x-protobuf`
     - Select `Metric` as the `OpenTelemetry Signal`
     - Select `v2` as the `Data Model Version`

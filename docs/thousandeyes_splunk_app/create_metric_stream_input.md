@@ -1,11 +1,13 @@
 # Create Metrics Stream Input
 
+In this step you'll stream ThousandEyes test metrics into Splunk, powering the Network and Application dashboards with latency, loss, and path data.
+
 ## Configure Test Metrics Stream input
 
 To configure the ThousandEyes Test Metrics stream, follow these steps:
 
-- From the Splunk App, to go the `Inputs` section
-- Click `Create New Input` and select `Test Stream - Metrics`
+- From the Splunk App, go to the `Inputs` section
+- Click `Create New Input` and select `Tests Stream - Metrics`
 - Fill out the form:
     - Name: Enter a unique name for your input
     - ThousandEyes User: Select your user

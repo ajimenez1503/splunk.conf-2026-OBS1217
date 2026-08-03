@@ -1,5 +1,6 @@
-# Visualize ThousandEyes Page Load HAR as a Trace in Splunk Observability Cloud 
+# Visualize ThousandEyes Page Load HAR as a Trace in Splunk Observability Cloud
 
+In this step you'll explore your ThousandEyes page-load data as an APM trace in Observability Cloud, drilling into each span of the page load.
 
 - Log in to [Splunk Observability Cloud](../getting_started/login_splunk_observability.md)
 - From the landing page, navigate to `APM` -> `Trace Analyzer`
