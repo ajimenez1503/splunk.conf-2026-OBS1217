@@ -99,5 +99,8 @@ plugins:
   - search
   - open-in-new-tab
 
+extra_css:
+  - stylesheets/extra.css
+
 copyright: |
   &copy; 2026 <a href="https://cisco.com"  target="_blank" rel="noopener">Cisco Systems, Inc.</a>
