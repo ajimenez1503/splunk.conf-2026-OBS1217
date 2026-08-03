@@ -1,7 +1,7 @@
 # Integrate Splunk ITSI with ThousandEyes
 
-This guide explains how to integrate Cisco ThousandEyes with Splunk IT Service Intelligence (ITSI).
-The integration enables you to ingest test data, send alert notifications, and visualize Splunk episodes directly in ThousandEyes.
+In this section you'll connect ThousandEyes and ITSI so network data and service health live in one place, letting you jump from an alert straight to the root cause.
+You'll ingest test data, send alert notifications, and visualize Splunk episodes directly in ThousandEyes.
 
 ## Update the Index Used by the Content Pack
 
