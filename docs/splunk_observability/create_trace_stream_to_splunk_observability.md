@@ -1,6 +1,6 @@
 # Create a Trace Stream on ThousandEyes for Splunk Observability Cloud
 
-To create a ThousandEyes trace stream for Splunk Observability Cloud, follow these steps:
+To create a ThousandEyes Trace Stream for Splunk Observability Cloud, follow these steps:
 
 - Navigate to `Manage` -> `Integrations` -> `Integrations 1.0`
 - Click `+ New Integration` and select `ThousandEyes for OpenTelemetry`
@@ -10,7 +10,7 @@ To create a ThousandEyes trace stream for Splunk Observability Cloud, follow the
 - Configure the integration:
     - Enter a `Name` for the integration (e.g., "OBS1217 - ofushtei - O11y trace stream")
     - Set the `Target` to `HTTP`
-    - Enter the `Endpoint URL` to send OTLP (OpenTelemetry Protocol) data to:
+    - Enter the `Endpoint URL` for sending OTLP (OpenTelemetry Protocol) data:
 
       ```
       https://ingest.us1.signalfx.com/v2/trace/otlp
@@ -19,15 +19,15 @@ To create a ThousandEyes trace stream for Splunk Observability Cloud, follow the
     - For `Preset Configuration`, select `Splunk Observability Cloud`
     - For `Auth Type`, select `Custom`
     - Set the following `Custom Headers`:
-        - `X-SF-Token: qc-VZhVaVARLKDPuhBJQfQ`
-        - `Content-Type: application/x-protobuf`
+        - `X-SF-Token` to `qc-VZhVaVARLKDPuhBJQfQ`
+        - `Content-Type` to `application/x-protobuf`
     - Select `Trace` as the `OpenTelemetry Signal`
     - Select `v2` as the `Data Model Version`
-    - In `Network & App Synthetic` dropdown, select the test you created earlier
+    - In the `Network & App Synthetic Tests` dropdown, select the test you created earlier
 - Click `Save`
 
 ![Create OpenTelemetry trace integration](../img/thousandeyes/te_otel_trace_config.png)
 
 !!! note "Data may not be ready - Wait a few minutes" 
-    Please note, it will take a couple of minutes for the trace stream to start. 
+    Please note that it will take a couple of minutes for the trace stream to start. 
     You can view traces in the APM section of Splunk Observability Cloud.
