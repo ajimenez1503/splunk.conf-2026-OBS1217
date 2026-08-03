@@ -4,7 +4,7 @@
 
 By default, this integration expects you to ingest ThousandEyes Metrics via the Cisco ThousandEyes App.
 
-If you haven't complete this yet, please follow the [workshop guide](../thousandeyes_splunk_app/test_metrics_stream_input.md) or the [official documentation](https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app/itsi#stream-thousandeyes-test-data-to-splunk-itsi)
+If you haven't complete this yet, please follow the [workshop guide](../thousandeyes_splunk_app/create_metric_stream_input.md) or the [official documentation](https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app/itsi#stream-thousandeyes-test-data-to-splunk-itsi)
 
 ## Install and Configure the Content Pack
 
