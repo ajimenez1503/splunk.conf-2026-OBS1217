@@ -29,7 +29,7 @@
     
     
       
-        <title>Configure ThousandEyes content pack - .conf26 OBS1217 - Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk</title>
+        <title>Configure Cisco ThousandEyes Content Pack - .conf26 OBS1217 - Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk</title>
       
     
     
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configure ThousandEyes content pack
+              Configure Cisco ThousandEyes Content Pack
             
           </span>
         </div>
@@ -311,7 +311,7 @@
           
   
   
-  Splunk Core
+  Splunk Platform (Direct Streaming)
 
         </a>
       </li>
@@ -331,7 +331,7 @@
           
   
   
-  Cisco ThousandEyes App for Splunk
+  Splunk Platform (via ThousandEyes App)
 
         </a>
       </li>
@@ -929,7 +929,7 @@
   <span class="md-ellipsis">
     
   
-    Splunk Core
+    Splunk Platform (Direct Streaming)
   
 
     
@@ -945,7 +945,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Splunk Core
+    Splunk Platform (Direct Streaming)
   
 
           </label>
@@ -1130,7 +1130,7 @@
   <span class="md-ellipsis">
     
   
-    Cisco ThousandEyes App for Splunk
+    Splunk Platform (via ThousandEyes App)
   
 
     
@@ -1146,7 +1146,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Cisco ThousandEyes App for Splunk
+    Splunk Platform (via ThousandEyes App)
   
 
           </label>
@@ -1194,7 +1194,7 @@
   <span class="md-ellipsis">
     
   
-    Create a Test Stream - Metrics Input
+    Create a Metrics Stream Input
   
 
     
@@ -1342,7 +1342,7 @@
   <span class="md-ellipsis">
     
   
-    Prepate Splunk ITSI
+    Prepare Splunk ITSI
   
 
     
@@ -1379,7 +1379,7 @@
   <span class="md-ellipsis">
     
   
-    Configure ThousandEyes content pack
+    Configure Cisco ThousandEyes Content Pack
   
 
     
@@ -1397,7 +1397,7 @@
   <span class="md-ellipsis">
     
   
-    Configure ThousandEyes content pack
+    Configure Cisco ThousandEyes Content Pack
   
 
     
@@ -1478,7 +1478,7 @@
   <span class="md-ellipsis">
     
   
-    Configure ITSI Alerting content pack
+    Configure ITSI Monitoring and Alerting Content Pack
   
 
     
@@ -1520,33 +1520,32 @@
 
 
 <h1 id="stream-thousandeyes-test-data-to-splunk-itsi">Stream ThousandEyes Test Data to Splunk ITSI</h1>
+<p>In this step you'll install the content pack, which turns ThousandEyes metrics (latency, loss, jitter, DNS) into ready-made <strong>ITSI services and KPIs</strong>.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>By default, this integration expects you to ingest ThousandEyes Metrics via the Cisco ThousandEyes App.</p>
-<p>If you haven't complete this yet, please follow the <a href="../../thousandeyes_splunk_app/create_metric_stream_input/">workshop guide</a> or the <a href="https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app/itsi#stream-thousandeyes-test-data-to-splunk-itsi">official documentation</a></p>
+<p>If you haven't completed this yet, please follow the <a href="../../thousandeyes_splunk_app/create_metric_stream_input/">workshop guide</a> or the <a href="https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app/itsi#stream-thousandeyes-test-data-to-splunk-itsi">official documentation</a></p>
 <h2 id="install-and-configure-the-content-pack">Install and Configure the Content Pack</h2>
 <p>To install and configure the Content Pack for Cisco ThousandEyes, follow these steps:</p>
 <ul>
-<li>Navigate to <code>ITSI</code> -&gt; <code>Configuration</code> -&gt; <code>Data Integrations</code> -&gt; <code>Content Library</code></li>
+<li>Go to <code>ITSI</code> -&gt; <code>Configuration</code> -&gt; <code>Data Integrations</code> -&gt; <code>Content Library</code></li>
 <li>Select <code>Cisco ThousandEyes</code> from the list</li>
-<li>Follow the steps from the official ThousandEyes documentation: <a href="https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app/itsi#install-the-content-pack-for-cisco-thousandeyes">Splunk ITSI Integration # Install the Content Pack for Cisco ThousandEyes</a><ul>
 <li>Click <code>Proceed</code></li>
 <li>Add all objects (both <code>New</code> and <code>Already installed</code>)</li>
 <li>Click <code>Import as enabled</code></li>
 <li>Click <code>Activate all saved searches</code></li>
+<li>Optionally, add a prefix to help with the filtering, for example: <code>&lt;your-unique-id&gt;-obs1217-</code></li>
 <li>Click <code>Backfill service KPIs</code></li>
-<li>Click <code>Install selected</code></li>
-<li>In the confirmation dialog, click <code>Install</code></li>
-</ul>
-</li>
+<li>Click <code>Install selected</code>, then <code>Install</code> in the confirmation dialog</li>
 </ul>
 <p><img alt="ThousandEyes Content Pack configuration" src="../../img/itsi/itsi_te_pack_config.png" /></p>
 <h2 id="validate-installation">Validate installation</h2>
 <p>To validate your installation:</p>
 <ul>
 <li>Go to <code>Service Analyzer</code> -&gt; <code>Default Analyzer</code></li>
-<li>Filter services by the prefix you specified during the configuration</li>
+<li>Filter services by the prefix you specified during configuration</li>
 <li>If you don't see any results, try extending the time range</li>
 </ul>
+<p>Services reporting health scores means the data path is working end to end.</p>
 <p><img alt="ITSI Service Analyzer validation" src="../../img/itsi/itsi_te_validation.png" /></p>
 
 
@@ -1585,7 +1584,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../itsi_initial_config/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Prepate Splunk ITSI">
+          <a href="../itsi_initial_config/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Prepare Splunk ITSI">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1595,20 +1594,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Prepate Splunk ITSI
+                Prepare Splunk ITSI
               </div>
             </div>
           </a>
         
         
           
-          <a href="../configure_alerts_content_pack/" class="md-footer__link md-footer__link--next" aria-label="Next: Configure ITSI Alerting content pack">
+          <a href="../configure_alerts_content_pack/" class="md-footer__link md-footer__link--next" aria-label="Next: Configure ITSI Monitoring and Alerting Content Pack">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Configure ITSI Alerting content pack
+                Configure ITSI Monitoring and Alerting Content Pack
               </div>
             </div>
             <div class="md-footer__button md-icon">

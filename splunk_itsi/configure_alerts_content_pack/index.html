@@ -27,7 +27,7 @@
     
     
       
-        <title>Configure ITSI Alerting content pack - .conf26 OBS1217 - Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk</title>
+        <title>Configure ITSI Monitoring and Alerting Content Pack - .conf26 OBS1217 - Break Down Silos: Achieve Unified Observability with ThousandEyes and Splunk</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configure-the-content-pack-for-itsi-monitoring-and-alerting" class="md-skip">
+        <a href="#configure-the-alerting-integrations-for-itsi-and-thousandeyes" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configure ITSI Alerting content pack
+              Configure ITSI Monitoring and Alerting Content Pack
             
           </span>
         </div>
@@ -309,7 +309,7 @@
           
   
   
-  Splunk Core
+  Splunk Platform (Direct Streaming)
 
         </a>
       </li>
@@ -329,7 +329,7 @@
           
   
   
-  Cisco ThousandEyes App for Splunk
+  Splunk Platform (via ThousandEyes App)
 
         </a>
       </li>
@@ -927,7 +927,7 @@
   <span class="md-ellipsis">
     
   
-    Splunk Core
+    Splunk Platform (Direct Streaming)
   
 
     
@@ -943,7 +943,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Splunk Core
+    Splunk Platform (Direct Streaming)
   
 
           </label>
@@ -1128,7 +1128,7 @@
   <span class="md-ellipsis">
     
   
-    Cisco ThousandEyes App for Splunk
+    Splunk Platform (via ThousandEyes App)
   
 
     
@@ -1144,7 +1144,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Cisco ThousandEyes App for Splunk
+    Splunk Platform (via ThousandEyes App)
   
 
           </label>
@@ -1192,7 +1192,7 @@
   <span class="md-ellipsis">
     
   
-    Create a Test Stream - Metrics Input
+    Create a Metrics Stream Input
   
 
     
@@ -1340,7 +1340,7 @@
   <span class="md-ellipsis">
     
   
-    Prepate Splunk ITSI
+    Prepare Splunk ITSI
   
 
     
@@ -1368,7 +1368,7 @@
   <span class="md-ellipsis">
     
   
-    Configure ThousandEyes content pack
+    Configure Cisco ThousandEyes Content Pack
   
 
     
@@ -1398,6 +1398,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configure ITSI Monitoring and Alerting Content Pack
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1405,7 +1423,7 @@
   <span class="md-ellipsis">
     
   
-    Configure ITSI Alerting content pack
+    Configure ITSI Monitoring and Alerting Content Pack
   
 
     
@@ -1414,6 +1432,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-the-itsi-monitoring-and-alerting-content-pack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install the ITSI Monitoring and Alerting Content Pack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#send-thousandeyes-alerts-to-itsi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Send ThousandEyes Alerts to ITSI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#send-itsi-episodes-to-thousandeyes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Send ITSI Episodes to ThousandEyes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualize-itsi-episodes-in-thousandeyes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualize ITSI Episodes in ThousandEyes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1447,8 +1528,62 @@
   
 
 
-<h1 id="configure-the-content-pack-for-itsi-monitoring-and-alerting">Configure the Content Pack for ITSI Monitoring and Alerting</h1>
-<p>To configure this integration, follow the steps from the ThousandEyes documentation: <a href="https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app/itsi#send-thousandeyes-alert-notifications-to-splunk-itsi">Send ThousandEyes Alert Notifications to Splunk ITSI</a></p>
+<h1 id="configure-the-alerting-integrations-for-itsi-and-thousandeyes">Configure the Alerting Integrations for ITSI and ThousandEyes</h1>
+<p>In this step you'll set up the two-way alert loop: ThousandEyes alerts flow into ITSI as episodes, and ITSI episodes appear on the ThousandEyes timeline with a link back to Splunk. This enables Network and X-Ops teams to see the same incident from their preferred perspective.</p>
+<h2 id="install-the-itsi-monitoring-and-alerting-content-pack">Install the ITSI Monitoring and Alerting Content Pack</h2>
+<p>This content pack provides the event-management framework the alerting integration builds on, so we'll install it first.</p>
+<p>To install it, follow these steps:</p>
+<ul>
+<li>In Splunk ITSI, go to <code>Configuration</code> -&gt; <code>Data Integrations</code> -&gt; <code>Content Library</code></li>
+<li>Select the <code>ITSI Monitoring and Alerting</code> content pack</li>
+<li>Review what's included, then click <code>Proceed</code></li>
+<li>Make sure you install all objects<ul>
+<li>Take note of the aggregation policies imported by this content pack</li>
+</ul>
+</li>
+<li>Click <code>Import as enabled</code></li>
+<li>Optionally, add a prefix to help with the filtering, for example: <code>&lt;your-unique-id&gt;-obs1217-</code></li>
+<li>Optionally backfill your environment with the previous seven days of KPI data</li>
+<li>Click <code>Install selected</code>, then <code>Install</code> in the confirmation dialog</li>
+</ul>
+<h2 id="send-thousandeyes-alerts-to-itsi">Send ThousandEyes Alerts to ITSI</h2>
+<p>To forward ThousandEyes alerts into ITSI, follow these steps:</p>
+<ul>
+<li>In ThousandEyes, create a custom webhook for sending alerts to Splunk ITSI</li>
+<li>In Splunk ITSI, go to <code>Configuration</code> -&gt; <code>Data Integrations</code></li>
+<li>Under <code>Alerts</code>, click <code>Cisco ThousandEyes</code></li>
+<li>In the connections table, click the <code>⋮</code> (more actions) menu for <code>thousandeyes_default</code>, then click <code>Activate</code></li>
+<li>The connection status should update to <code>Active</code></li>
+</ul>
+<h2 id="send-itsi-episodes-to-thousandeyes">Send ITSI Episodes to ThousandEyes</h2>
+<p>The ITSI Monitoring and Alerting content pack ships several aggregation policies named <code>Episodes by ...</code> (for example, <code>Episodes by ITSI Service</code>).</p>
+<p>To surface ITSI episodes back in ThousandEyes, follow these steps:</p>
+<ul>
+<li>Go to <code>Configuration</code> -&gt; <code>Event Management</code> -&gt; <code>Notable Event Aggregation Policies</code></li>
+<li>For each aggregation policy from the content pack:<ul>
+<li>Open the <code>Action Rules</code> tab and click <code>+ Add Rule</code></li>
+<li>Under <code>If</code>, select <code>The number of events in this episode is</code> -&gt; <code>Greater than or equal to</code> -&gt; <code>1</code></li>
+<li>Under <code>Then</code>, select <code>Send to ThousandEyes</code> and <code>Repeat every event while episode is active</code></li>
+<li>Click <code>Configure</code> and enter the URL of your Splunk instance</li>
+<li>Find the closing-episode rule: <code>If the episode is broken, then change status to Closed for the episode ...</code>, and edit it to add an extra action:<ul>
+<li>Select the rule and click <code>+Add</code></li>
+<li>Under <code>And</code>, select <code>Send to ThousandEyes</code></li>
+<li>Click <code>Configure</code> and enter the same URL</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Click <code>Done</code>, then <code>Save</code></li>
+</ul>
+<h2 id="visualize-itsi-episodes-in-thousandeyes">Visualize ITSI Episodes in ThousandEyes</h2>
+<p>To confirm episodes are flowing back into ThousandEyes, follow these steps:</p>
+<ul>
+<li>Open a ThousandEyes test impacted by an ITSI episode</li>
+<li>In the test timeline, ITSI episodes appear as swimlane annotations below the primary metric</li>
+<li>Hover over an annotation to see the number of episodes and total notable events at that point in time</li>
+<li>Click the <code>Splunk ITSI</code> tab to view episode details</li>
+<li>Click the <code>ITSI URL</code> to jump back to the episode in Splunk</li>
+</ul>
 
 
 
@@ -1486,7 +1621,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../configure_te_content_pack/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Configure ThousandEyes content pack">
+          <a href="../configure_te_content_pack/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Configure Cisco ThousandEyes Content Pack">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1496,7 +1631,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Configure ThousandEyes content pack
+                Configure Cisco ThousandEyes Content Pack
               </div>
             </div>
           </a>
