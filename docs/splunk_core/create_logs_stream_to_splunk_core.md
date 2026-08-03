@@ -29,3 +29,9 @@ Use the ThousandEyes web interface to create the integration manually using Inte
 
 !!! note "Data Flow Timing"
     The stream will begin sending data to your Splunk instance within a few minutes of activation.
+
+
+## Configure integration from the Splunk platform
+
+To see if the same configuration is possible from the Splunk interface, head over to \[[Configure ThousandEyes App](../thousandeyes_splunk_app/authenticate_thousandeyes_user.md)\] to learn how to set it up using the ThousandEyes App for Splunk.
+

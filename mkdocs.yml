@@ -22,14 +22,14 @@ nav:
     - View the Service Map: service_map/basic/view_service_map.md
   - Splunk Observability Cloud:
     - Create a Metric Stream to Splunk Observability Cloud: splunk_observability/create_metric_stream_to_splunk_observability.md
-    - Create a Trace Stream to Splunk Observability Cloud: splunk_observability/create_trace_stream_to_splunk_observability.md
     - Visualize ThousandEyes Metrics in Splunk Observability Cloud: splunk_observability/visualize_metrics_in_splunk_observability.md
+    - Create a Trace Stream to Splunk Observability Cloud: splunk_observability/create_trace_stream_to_splunk_observability.md
     - Visualize ThousandEyes Traces in Splunk Observability Cloud: splunk_observability/visualize_traces_in_splunk_observability.md
   - Splunk Core:
-    - Create a Metrics Stream to Splunk Core: splunk_core/create_metrics_stream_to_splunk_core.md
     - Create a Logs Stream to Splunk Core: splunk_core/create_logs_stream_to_splunk_core.md
-    - Visualize ThousandEyes Metrics in Splunk Core: splunk_core/visualize_metrics_in_splunk_core.md
+    - Create a Metrics Stream to Splunk Core: splunk_core/create_metrics_stream_to_splunk_core.md
     - Visualize ThousandEyes Logs in Splunk Core: splunk_core/visualize_logs_in_splunk_core.md
+    - Visualize ThousandEyes Metrics in Splunk Core: splunk_core/visualize_metrics_in_splunk_core.md
     - Stream ThousandEyes Alerts to Splunk Core: splunk_core/stream_alerts_to_splunk_core_webhook.md
   - Cisco ThousandEyes App for Splunk:
     - Authenticate the ThousandEyes User: thousandeyes_splunk_app/authenticate_thousandeyes_user.md
