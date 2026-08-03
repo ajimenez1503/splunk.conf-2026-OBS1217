@@ -18,7 +18,7 @@
         <link rel="prev" href="../../service_map/basic/view_service_map/">
       
       
-        <link rel="next" href="../create_trace_stream_to_splunk_observability/">
+        <link rel="next" href="../visualize_metrics_in_splunk_observability/">
       
       
         
@@ -309,7 +309,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-tabs__link">
+        <a href="../../splunk_core/create_logs_stream_to_splunk_core/" class="md-tabs__link">
           
   
   
@@ -826,14 +826,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../create_trace_stream_to_splunk_observability/" class="md-nav__link">
+      <a href="../visualize_metrics_in_splunk_observability/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Create a Trace Stream to Splunk Observability Cloud
+    Visualize ThousandEyes Metrics in Splunk Observability Cloud
   
 
     
@@ -854,14 +854,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../visualize_metrics_in_splunk_observability/" class="md-nav__link">
+      <a href="../create_trace_stream_to_splunk_observability/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Visualize ThousandEyes Metrics in Splunk Observability Cloud
+    Create a Trace Stream to Splunk Observability Cloud
   
 
     
@@ -971,34 +971,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Create a Metrics Stream to Splunk Core
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../splunk_core/create_logs_stream_to_splunk_core/" class="md-nav__link">
         
   
@@ -1027,14 +999,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_core/visualize_metrics_in_splunk_core/" class="md-nav__link">
+      <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Visualize ThousandEyes Metrics in Splunk Core
+    Create a Metrics Stream to Splunk Core
   
 
     
@@ -1063,6 +1035,34 @@
     
   
     Visualize ThousandEyes Logs in Splunk Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../splunk_core/visualize_metrics_in_splunk_core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualize ThousandEyes Metrics in Splunk Core
   
 
     
@@ -1450,7 +1450,7 @@
 
 
 <h1 id="create-thousandeyes-metric-stream-for-splunk-observability-cloud">Create ThousandEyes Metric Stream for Splunk Observability Cloud</h1>
-<p>To create a ThousandEyes Metric Stream Splunk, follow these steps:</p>
+<p>To create a ThousandEyes Metric Stream for Splunk Observability Cloud, follow these steps:</p>
 <ul>
 <li>Navigate to <code>Manage</code> -&gt; <code>Integrations</code> -&gt; <code>Integrations 1.0</code></li>
 <li>Click <code>+ New Integration</code> and select <code>ThousandEyes for OpenTelemetry</code></li>
@@ -1462,7 +1462,7 @@
 <ul>
 <li>Enter a <code>Name</code> for the integration (e.g., "OBS1217 - ofushtei - O11y metric stream")</li>
 <li>Set the <code>Target</code> to <code>HTTP</code></li>
-<li>Enter the <code>Endpoint URL</code> to send OTLP (OpenTelemetry Protocol) data to:</li>
+<li>Enter the <code>Endpoint URL</code> for sending OTLP (OpenTelemetry Protocol) data:</li>
 </ul>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://ingest.us1.signalfx.com/v2/datapoint/otlp
 </span></code></pre></div>
@@ -1476,7 +1476,7 @@
 </li>
 <li>Select <code>Metric</code> as the <code>OpenTelemetry Signal</code></li>
 <li>Select <code>v2</code> as the <code>Data Model Version</code></li>
-<li>In <code>Network &amp; App Synthetic Tests</code> dropdown, select the test you created earlier</li>
+<li>In the <code>Network &amp; App Synthetic Tests</code> dropdown, select the test you created earlier</li>
 <li>Click <code>Save</code></li>
 </ul>
 </li>
@@ -1484,7 +1484,7 @@
 <p><img alt="Create OpenTelemetry metric integration" src="../../img/thousandeyes/te_otel_metric_config.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Data may not be ready - Wait a few minutes</p>
-<p>Please note, it will take a couple of minutes for the metric stream to start, so while you wait, you can move onto the next topic.</p>
+<p>Please note that it will take a couple of minutes for the metric stream to start, so while you wait, you can move on to the next topic.</p>
 </div>
 
 
@@ -1540,13 +1540,13 @@
         
         
           
-          <a href="../create_trace_stream_to_splunk_observability/" class="md-footer__link md-footer__link--next" aria-label="Next: Create a Trace Stream to Splunk Observability Cloud">
+          <a href="../visualize_metrics_in_splunk_observability/" class="md-footer__link md-footer__link--next" aria-label="Next: Visualize ThousandEyes Metrics in Splunk Observability Cloud">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Create a Trace Stream to Splunk Observability Cloud
+                Visualize ThousandEyes Metrics in Splunk Observability Cloud
               </div>
             </div>
             <div class="md-footer__button md-icon">

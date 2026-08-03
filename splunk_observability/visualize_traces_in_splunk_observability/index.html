@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://ajimenez1503.github.io/splunk.conf-2026-OBS1217/splunk_observability/visualize_traces_in_splunk_observability/">
       
       
-        <link rel="prev" href="../visualize_metrics_in_splunk_observability/">
+        <link rel="prev" href="../create_trace_stream_to_splunk_observability/">
       
       
-        <link rel="next" href="../../splunk_core/create_metrics_stream_to_splunk_core/">
+        <link rel="next" href="../../splunk_core/create_logs_stream_to_splunk_core/">
       
       
         
@@ -309,7 +309,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-tabs__link">
+        <a href="../../splunk_core/create_logs_stream_to_splunk_core/" class="md-tabs__link">
           
   
   
@@ -816,14 +816,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../create_trace_stream_to_splunk_observability/" class="md-nav__link">
+      <a href="../visualize_metrics_in_splunk_observability/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Create a Trace Stream to Splunk Observability Cloud
+    Visualize ThousandEyes Metrics in Splunk Observability Cloud
   
 
     
@@ -844,14 +844,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../visualize_metrics_in_splunk_observability/" class="md-nav__link">
+      <a href="../create_trace_stream_to_splunk_observability/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Visualize ThousandEyes Metrics in Splunk Observability Cloud
+    Create a Trace Stream to Splunk Observability Cloud
   
 
     
@@ -971,34 +971,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Create a Metrics Stream to Splunk Core
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../splunk_core/create_logs_stream_to_splunk_core/" class="md-nav__link">
         
   
@@ -1027,14 +999,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_core/visualize_metrics_in_splunk_core/" class="md-nav__link">
+      <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Visualize ThousandEyes Metrics in Splunk Core
+    Create a Metrics Stream to Splunk Core
   
 
     
@@ -1063,6 +1035,34 @@
     
   
     Visualize ThousandEyes Logs in Splunk Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../splunk_core/visualize_metrics_in_splunk_core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualize ThousandEyes Metrics in Splunk Core
   
 
     
@@ -1449,43 +1449,41 @@
   
 
 
-<h1 id="visualize-thousandeyes-page-load-har-as-a-trace-in-splunk-observability-cloud">Visualize ThousandEyes Page Load HAR as a trace in Splunk Observability Cloud</h1>
+<h1 id="visualize-thousandeyes-page-load-har-as-a-trace-in-splunk-observability-cloud">Visualize ThousandEyes Page Load HAR as a Trace in Splunk Observability Cloud</h1>
 <ul>
-<li>Log in to the <a href="../../getting_started/login_splunk_observability/">Splunk Observability Cloud</a></li>
+<li>Log in to <a href="../../getting_started/login_splunk_observability/">Splunk Observability Cloud</a></li>
 <li>From the landing page, navigate to <code>APM</code> -&gt; <code>Trace Analyzer</code></li>
 </ul>
 <p><img alt="Trace view" src="../../img/splunk_observability/o11y_apm_nav.png" /></p>
 <ul>
-<li>Filter by <code>Services</code> and enter the service you configured your test for<ul>
+<li>Filter by <code>Services</code> and enter the service you configured for your test<ul>
 <li>For example, <code>www.cisco.com</code> or <code>*cisco*</code></li>
 </ul>
 </li>
 </ul>
 <p><img alt="Search traces" src="../../img/splunk_observability/o11y_trace_filter_svc.png" /></p>
 <ul>
-<li>Click Add Filters and create a filter <code>thousandeyes.test.name = &lt;your-test-name&gt;</code> <ul>
+<li>Click <code>Add Filters</code> and create a filter: <code>thousandeyes.test.name = &lt;your-test-name&gt;</code> <ul>
 <li>For example, <code>thousandeyes.test.name = ofushtei-1217-page-load-cisco</code></li>
 </ul>
 </li>
 </ul>
 <p><img alt="Search by ThousandEyes test name" src="../../img/splunk_observability/o11y_trace_filter_test.png" /></p>
 <ul>
-<li>Click on the trace to view details</li>
+<li>Click on the trace to view its details</li>
 </ul>
 <p><img alt="Trace details" src="../../img/splunk_observability/o11y_trace_view.png" /></p>
 <ul>
 <li>
-<p>Each span will be a step in the page load and contains:</p>
+<p>Each span represents a step in the page load and contains:</p>
 <ul>
-<li>
-<p>Information about the span: ID, URL, method, duration, and status code</p>
-<p><img alt="span request details" src="../../img/splunk_observability/o11y_trace_details_1.png" /></p>
-</li>
-<li>
-<p>ThousandEyes identification: account, test, agent, stream</p>
-<p><img alt="span thousandeyes details" src="../../img/splunk_observability/o11y_trace_details_2.png" /></p>
-</li>
+<li>Span information: ID, URL, method, duration, and status code</li>
 </ul>
+<p><img alt="span request details" src="../../img/splunk_observability/o11y_trace_details_1.png" /></p>
+<ul>
+<li>ThousandEyes metadata: account, test, agent, and stream</li>
+</ul>
+<p><img alt="span thousandeyes details" src="../../img/splunk_observability/o11y_trace_details_2.png" /></p>
 </li>
 </ul>
 
@@ -1525,7 +1523,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../visualize_metrics_in_splunk_observability/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Visualize ThousandEyes Metrics in Splunk Observability Cloud">
+          <a href="../create_trace_stream_to_splunk_observability/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create a Trace Stream to Splunk Observability Cloud">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1535,20 +1533,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Visualize ThousandEyes Metrics in Splunk Observability Cloud
+                Create a Trace Stream to Splunk Observability Cloud
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-footer__link md-footer__link--next" aria-label="Next: Create a Metrics Stream to Splunk Core">
+          <a href="../../splunk_core/create_logs_stream_to_splunk_core/" class="md-footer__link md-footer__link--next" aria-label="Next: Create a Logs Stream to Splunk Core">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Create a Metrics Stream to Splunk Core
+                Create a Logs Stream to Splunk Core
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -307,7 +307,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-tabs__link">
+        <a href="../../splunk_core/create_logs_stream_to_splunk_core/" class="md-tabs__link">
           
   
   
@@ -813,14 +813,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_observability/create_trace_stream_to_splunk_observability/" class="md-nav__link">
+      <a href="../../splunk_observability/visualize_metrics_in_splunk_observability/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Create a Trace Stream to Splunk Observability Cloud
+    Visualize ThousandEyes Metrics in Splunk Observability Cloud
   
 
     
@@ -841,14 +841,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_observability/visualize_metrics_in_splunk_observability/" class="md-nav__link">
+      <a href="../../splunk_observability/create_trace_stream_to_splunk_observability/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Visualize ThousandEyes Metrics in Splunk Observability Cloud
+    Create a Trace Stream to Splunk Observability Cloud
   
 
     
@@ -958,34 +958,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Create a Metrics Stream to Splunk Core
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../splunk_core/create_logs_stream_to_splunk_core/" class="md-nav__link">
         
   
@@ -1014,14 +986,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_core/visualize_metrics_in_splunk_core/" class="md-nav__link">
+      <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Visualize ThousandEyes Metrics in Splunk Core
+    Create a Metrics Stream to Splunk Core
   
 
     
@@ -1050,6 +1022,34 @@
     
   
     Visualize ThousandEyes Logs in Splunk Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../splunk_core/visualize_metrics_in_splunk_core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualize ThousandEyes Metrics in Splunk Core
   
 
     
@@ -1317,10 +1317,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#view-alerts-dashboard" class="md-nav__link">
+  <a href="#view-the-alerts-dashboard" class="md-nav__link">
     <span class="md-ellipsis">
       
-        View Alerts dashboard
+        View the Alerts Dashboard
       
     </span>
   </a>
@@ -1510,24 +1510,28 @@
 
 <h1 id="create-alerts-input">Create Alerts Input</h1>
 <h2 id="configure-alerts-input">Configure Alerts input</h2>
+<p>To configure the ThousandEyes Alerts stream, follow these steps:</p>
 <ul>
-<li>In the <code>Inputs</code> section, click <code>Create New Input</code> and select <code>Alerts Stream</code>.</li>
-<li>Fill in the form:</li>
-<li>Name: enter a unique name.</li>
-<li>ThousandEyes User: select your user.</li>
-<li>Account Group: select your account group.</li>
-<li>Alert Rules: select one or more alert rules to enable webhook notifications.</li>
-<li>HEC Target: enter the HEC target for your Splunk instance. Example: <code>https://&lt;host&gt;:8088/services/collector/event</code></li>
-<li>HEC Token: select <code>ThousandEyesToken</code>.</li>
-<li>Alerts Index: select <code>default</code>.</li>
-<li>Click <code>Add</code>.</li>
+<li>From the Splunk App, go to the <code>Inputs</code> section</li>
+<li>Click <code>Create New Input</code> and select <code>Activity logs Stream</code></li>
+<li>Fill out the form:<ul>
+<li>Name: Enter a unique name for your input</li>
+<li>ThousandEyes User: Select your user</li>
+<li>Account Group: Select your account group</li>
+<li>Alert Rules: Select one or more alert rules to enable webhook notifications</li>
+<li>HEC Target: Enter the HEC target of your Splunk instance. Example: <code>https://&lt;host&gt;:8088/services/collector/event</code></li>
+<li>HEC Token: Select <code>thousandeyes_hec</code></li>
+<li>Alerts Index: Select <code>thousandeyes_data</code></li>
+</ul>
+</li>
+<li>Click <code>Add</code></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Automatic webhook configuration</p>
 <p>The app creates a ThousandEyes webhook operation and a Splunk HEC connector, links them, and updates the selected alert rules to use the webhook for notifications.</p>
 </div>
 <p><img alt="Alerts Stream input configuration" src="../../img/thousandeyes_splunk_app/inputAlertsStream.png" /></p>
-<h2 id="view-alerts-dashboard">View Alerts dashboard</h2>
+<h2 id="view-the-alerts-dashboard">View the Alerts Dashboard</h2>
 <ul>
 <li>Trigger an alert for one of the selected alert rules.</li>
 <li>In the <code>Dashboards</code> section, select <code>Alerts</code>.</li>

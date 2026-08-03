@@ -307,7 +307,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-tabs__link">
+        <a href="../../splunk_core/create_logs_stream_to_splunk_core/" class="md-tabs__link">
           
   
   
@@ -813,14 +813,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_observability/create_trace_stream_to_splunk_observability/" class="md-nav__link">
+      <a href="../../splunk_observability/visualize_metrics_in_splunk_observability/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Create a Trace Stream to Splunk Observability Cloud
+    Visualize ThousandEyes Metrics in Splunk Observability Cloud
   
 
     
@@ -841,14 +841,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_observability/visualize_metrics_in_splunk_observability/" class="md-nav__link">
+      <a href="../../splunk_observability/create_trace_stream_to_splunk_observability/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Visualize ThousandEyes Metrics in Splunk Observability Cloud
+    Create a Trace Stream to Splunk Observability Cloud
   
 
     
@@ -958,34 +958,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Create a Metrics Stream to Splunk Core
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../splunk_core/create_logs_stream_to_splunk_core/" class="md-nav__link">
         
   
@@ -1014,14 +986,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_core/visualize_metrics_in_splunk_core/" class="md-nav__link">
+      <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Visualize ThousandEyes Metrics in Splunk Core
+    Create a Metrics Stream to Splunk Core
   
 
     
@@ -1050,6 +1022,34 @@
     
   
     Visualize ThousandEyes Logs in Splunk Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../splunk_core/visualize_metrics_in_splunk_core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualize ThousandEyes Metrics in Splunk Core
   
 
     
@@ -1300,10 +1300,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#view-activity-log-dashboards" class="md-nav__link">
+  <a href="#view-the-activity-log-dashboard" class="md-nav__link">
     <span class="md-ellipsis">
       
-        View Activity Log Dashboards
+        View the Activity Log Dashboard
       
     </span>
   </a>
@@ -1521,35 +1521,36 @@
 
 <h1 id="create-activity-log-input">Create Activity Log Input</h1>
 <h2 id="configure-activity-log-input">Configure Activity Log input</h2>
-<p>To configure ThousandEyes Activity Log stream, follow these steps:</p>
+<p>To configure the ThousandEyes Activity Log stream, follow these steps:</p>
 <ul>
-<li>From the Splunk App, go to <code>Inputs</code> section</li>
-<li>Click <code>Create New Input</code>, select <code>Activity logs Stream</code></li>
-<li>Fill the form:<ul>
-<li>Name: enter a unique name for your input</li>
-<li>ThousandEyes User: select your user</li>
-<li>Account Group: select your account group</li>
-<li>HEC Target: enter the HEC target of your Splunk instance. Example: <code>https://&lt;host&gt;:8088/services/collector/event</code></li>
-<li>HEC Token: select <code>thousandeyes_hec</code></li>
-<li>Activity logs Index: select <code>thousandeyes_data</code></li>
+<li>From the Splunk App, go to the <code>Inputs</code> section</li>
+<li>Click <code>Create New Input</code> and select <code>Activity logs Stream</code></li>
+<li>Fill out the form:<ul>
+<li>Name: Enter a unique name for your input</li>
+<li>ThousandEyes User: Select your user</li>
+<li>Account Group: Select your account group</li>
+<li>HEC Target: Enter the HEC target of your Splunk instance. Example: <code>https://&lt;host&gt;:8088/services/collector/event</code></li>
+<li>HEC Token: Select <code>thousandeyes_hec</code></li>
+<li>Activity logs Index: Select <code>thousandeyes_data</code></li>
 </ul>
 </li>
+<li>Click <code>Add</code></li>
 </ul>
 <p><img alt="Activity Config" src="../../img/thousandeyes_splunk_app/splunk_te_app_activity_config.png" /></p>
 <h2 id="generate-activity-in-thousandeyes">Generate activity in ThousandEyes</h2>
-<p>For the dashboard to have data, we need to generate activities in the ThousandEyes platform, for example:
-  - Log In to the ThousandEyes platform
+<p>For the dashboard to display data, we need to generate some activity in the ThousandEyes platform, for example:
+  - Log in to the ThousandEyes platform
   - Create a test
   - Update a test
-  - Logout from the ThousandEyes platform</p>
-<h2 id="view-activity-log-dashboards">View Activity Log Dashboards</h2>
+  - Log out of the ThousandEyes platform</p>
+<h2 id="view-the-activity-log-dashboard">View the Activity Log Dashboard</h2>
 <ul>
 <li>Generate some activity logs in ThousandEyes by creating/deleting tests.</li>
 <li>In the <code>Dashboards</code> section, select <code>Activity Log</code> </li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Data may not be ready - Wait a few minutes</p>
-<p>The telemetry needs to be generated by the application and send to Splunk. This may take a few minutes.</p>
+<p>The telemetry needs to be generated by the application and sent to Splunk. This may take a few minutes.</p>
 </div>
 <p><img alt="Dashboard Activity Logs" src="../../img/thousandeyes_splunk_app/splunk_te_app_activity_logs.png" /></p>
 

@@ -307,7 +307,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-tabs__link">
+        <a href="../../splunk_core/create_logs_stream_to_splunk_core/" class="md-tabs__link">
           
   
   
@@ -813,14 +813,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_observability/create_trace_stream_to_splunk_observability/" class="md-nav__link">
+      <a href="../../splunk_observability/visualize_metrics_in_splunk_observability/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Create a Trace Stream to Splunk Observability Cloud
+    Visualize ThousandEyes Metrics in Splunk Observability Cloud
   
 
     
@@ -841,14 +841,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_observability/visualize_metrics_in_splunk_observability/" class="md-nav__link">
+      <a href="../../splunk_observability/create_trace_stream_to_splunk_observability/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Visualize ThousandEyes Metrics in Splunk Observability Cloud
+    Create a Trace Stream to Splunk Observability Cloud
   
 
     
@@ -958,34 +958,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Create a Metrics Stream to Splunk Core
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../splunk_core/create_logs_stream_to_splunk_core/" class="md-nav__link">
         
   
@@ -1014,14 +986,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_core/visualize_metrics_in_splunk_core/" class="md-nav__link">
+      <a href="../../splunk_core/create_metrics_stream_to_splunk_core/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Visualize ThousandEyes Metrics in Splunk Core
+    Create a Metrics Stream to Splunk Core
   
 
     
@@ -1050,6 +1022,34 @@
     
   
     Visualize ThousandEyes Logs in Splunk Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../splunk_core/visualize_metrics_in_splunk_core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualize ThousandEyes Metrics in Splunk Core
   
 
     
@@ -1395,17 +1395,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prerequisites
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#update-the-index-used-by-the-content-pack" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1509,31 +1498,19 @@
 
 
 <h1 id="integrate-splunk-itsi-with-thousandeyes">Integrate Splunk ITSI with ThousandEyes</h1>
-<p>This guide explains how to integrate Cisco ThousandEyes with Splunk IT Service Intelligence.
+<p>This guide explains how to integrate Cisco ThousandEyes with Splunk IT Service Intelligence (ITSI).
 The integration enables you to ingest test data, send alert notifications, and visualize Splunk episodes directly in ThousandEyes.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<p>To start integrating ITSI and ThousandEyes, your Splunk environment needs to fulfil a few prerequisites</p>
-<ul>
-<li>Splunk ITSI version 4.20.x or later</li>
-<li>Cisco ThousandEyes App for Splunk version 0.1.0 or later</li>
-<li>Splunk App for Content Packs version 2.3.0 or later, including 2 Content Packs:<ul>
-<li>ITSI Monitoring and Alerting</li>
-<li>Cisco ThousandEyes </li>
-</ul>
-</li>
-</ul>
-<p>Luckily for you, everything is already installed</p>
 <h2 id="update-the-index-used-by-the-content-pack">Update the Index Used by the Content Pack</h2>
-<p>If your data stream does not use the default <code>thousandeyes</code> index, you need to update the content pack's search macro to match your selected index. And during our workshop, we used <code>thousandeyes_data</code> index.</p>
+<p>If your data stream does not use the default <code>thousandeyes</code> index, you need to update the content pack's search macro to match your selected index. For this workshop, we used the <code>thousandeyes_data</code> index.</p>
 <ul>
-<li>From the Splunk Enterprise main menu, select <code>Settings</code>, then <code>Advanced Search</code></li>
+<li>From the Splunk Enterprise main menu, select <code>Settings</code> -&gt; <code>Advanced Search</code></li>
 <li>Select <code>Search Macros</code></li>
-<li>In the App drop-down menu, select <code>Cisco ThousandEyes (DA-ITSI-CP-thousandeyes)</code></li>
+<li>In the <strong>App</strong> drop-down menu, select <code>Cisco ThousandEyes (DA-ITSI-CP-thousandeyes)</code></li>
 <li>Select <code>itsi_cp_thousandeyes_index</code><ul>
 <li>By default, the macro definition is set to <code>index="thousandeyes"</code></li>
 </ul>
 </li>
-<li>In the Definition field, change the index value to the index used by the Cisco ThousandEyes App for Splunk<ul>
+<li>In the <strong>Definition</strong> field, change the index value to the index used by the Cisco ThousandEyes App for Splunk<ul>
 <li>During this workshop, we used <code>thousandeyes_data</code> index</li>
 </ul>
 </li>
