@@ -39,14 +39,14 @@
   font-weight: 600;
 }
 
-/* body links: slate + underlined so they stay clearly clickable */
+/* body links: brand blue + underlined so they're clearly clickable */
 .md-typeset a {
-  color: #525E6C;
+  color: #0A60FF;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 .md-typeset a:hover {
-  color: #0A60FF;   /* subtle blue lift on hover */
+  color: #FF007F;   /* pink on hover for a bit of pop */
 }
 
 /* ---------- "note" admonition recolored to brand blue (#0A60FF) ---------- */
