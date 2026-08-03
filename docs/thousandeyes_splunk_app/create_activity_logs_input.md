@@ -1,5 +1,7 @@
 # Create Activity Log Input
 
+In this step you'll stream ThousandEyes activity logs into Splunk, giving you an audit trail of who changed what in your ThousandEyes account.
+
 ## Configure Activity Log input
 
 To configure the ThousandEyes Activity Log stream, follow these steps:
