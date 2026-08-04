@@ -18,11 +18,17 @@ To install it, follow these steps:
 - Optionally backfill your environment with the previous seven days of KPI data
 - Click `Install selected`, then `Install` in the confirmation dialog
 
+![Alerting Content Pack configuration](../img/itsi/itsi_alerting_pack_config.png)
+
 ## Send ThousandEyes Alerts to ITSI
 
-To forward ThousandEyes alerts into ITSI, follow these steps:
+First, make sure ThousandEyes alerts are being sent to Splunk. Depending on the path you followed earlier, this is either already done or done as follows:
 
-- In ThousandEyes, create a custom webhook for sending alerts to Splunk ITSI
+- **Via the Cisco ThousandEyes App for Splunk:** the app already created the webhook when you set up the Alerts Stream input — nothing more to do. See [Create an Alerts Input](../thousandeyes_splunk_app/create_alerts_input.md).
+- **Streaming directly:** create the custom webhook yourself. See [Stream ThousandEyes Alerts to Splunk Core](../splunk_core/stream_alerts_to_splunk_core_webhook.md).
+
+Then, enable the connection in ITSI:
+
 - In Splunk ITSI, go to `Configuration` -> `Data Integrations`
 - Under `Alerts`, click `Cisco ThousandEyes`
 - In the connections table, click the `⋮` (more actions) menu for `thousandeyes_default`, then click `Activate`
