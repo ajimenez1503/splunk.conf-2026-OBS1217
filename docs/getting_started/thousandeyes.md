@@ -2,12 +2,16 @@
 
 ## Log In to ThousandEyes
 
-Use the workshop account to access ThousandEyes:
+Use the shared [ThousandEyes workshop credentials spreadsheet](https://cisco-my.sharepoint.com/:x:/p/antonjim/IQDgi_SAY4ZhR7fAsmQakSbpAbHZA_KhqGCfyOus7eafp5k?e=PLOcU2) to obtain your credentials. If prompted, sign in with your Cisco account.
 
-- Go to the [ThousandEyes Log In page](https://app.thousandeyes.com/login).
-- Enter the following credentials:
-    - **Email**: `xxx`
-    - **Password**: `xxx`
+1. Find a row where the **Taken By** column is empty.
+2. Enter your full name in **Taken By** to claim that row before using its credentials.
+3. Copy the **User Name** and **Password** from the same row.
+4. Go to the [ThousandEyes Log In page](https://app.thousandeyes.com/login).
+5. Enter the copied **User Name** in the **Email** field and enter the copied **Password**.
+
+!!! warning "Claim only one account"
+    Do not use a row already claimed by another participant. Do not change the **Account Name**, **User Name**, or **Password** values in the spreadsheet.
 
 ## Create a ThousandEyes Page Load Test
 
