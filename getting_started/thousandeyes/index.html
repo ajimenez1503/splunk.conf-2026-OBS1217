@@ -1540,15 +1540,18 @@
 
 <h1 id="thousandeyes">ThousandEyes</h1>
 <h2 id="log-in-to-thousandeyes">Log In to ThousandEyes</h2>
-<p>Use the workshop account to access ThousandEyes:</p>
-<ul>
+<p>Use the shared <a href="https://cisco-my.sharepoint.com/:x:/p/antonjim/IQDgi_SAY4ZhR7fAsmQakSbpAbHZA_KhqGCfyOus7eafp5k?e=PLOcU2">ThousandEyes workshop credentials spreadsheet</a> to obtain your credentials. If prompted, sign in with your Cisco account.</p>
+<ol>
+<li>Find a row where the <strong>Taken By</strong> column is empty.</li>
+<li>Enter your full name in <strong>Taken By</strong> to claim that row before using its credentials.</li>
+<li>Copy the <strong>User Name</strong> and <strong>Password</strong> from the same row.</li>
 <li>Go to the <a href="https://app.thousandeyes.com/login">ThousandEyes Log In page</a>.</li>
-<li>Enter the following credentials:<ul>
-<li><strong>Email</strong>: <code>xxx</code></li>
-<li><strong>Password</strong>: <code>xxx</code></li>
-</ul>
-</li>
-</ul>
+<li>Enter the copied <strong>User Name</strong> in the <strong>Email</strong> field and enter the copied <strong>Password</strong>.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Claim only one account</p>
+<p>Do not use a row already claimed by another participant. Do not change the <strong>Account Name</strong>, <strong>User Name</strong>, or <strong>Password</strong> values in the spreadsheet.</p>
+</div>
 <h2 id="create-a-thousandeyes-page-load-test">Create a ThousandEyes Page Load Test</h2>
 <p>For ThousandEyes to be able to stream data to Splunk, first it needs to be collected by ThousandEyes. To achieve this, we need to create a ThousandEyes test.</p>
 <p>For this exercise, we are going to create a <code>Page Load</code> test that checks the availability and performance of <code>www.cisco.com</code> page.

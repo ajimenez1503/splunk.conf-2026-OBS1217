@@ -1464,7 +1464,7 @@
 <ul>
 <li>In the search bar, enter the following query to retrieve ThousandEyes Latency metric:</li>
 </ul>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>index=&quot;*&quot; source=&quot;ThousandEyesOTel&quot; | timechart avg(&quot;metric_name:network.latency&quot;) as &quot;Avg&quot; span=60s
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>index="*" source="ThousandEyesOTel" | timechart avg("metric_name:network.latency") as "Avg" span=60s
 </span></code></pre></div>
 <ul>
 <li>Click on the <code>Visualization</code> tab to change the chart type to <code>Line Chart</code></li>
@@ -1473,7 +1473,7 @@
 <ul>
 <li>In the search bar, enter the following query to retrieve ThousandEyes availability metric:</li>
 </ul>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>index=&quot;*&quot; source=&quot;ThousandEyesOTel&quot; | timechart avg(&quot;metric_name:http.server.request.availability&quot;) as &quot;Avg&quot; span=60s
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>index="*" source="ThousandEyesOTel" | timechart avg("metric_name:http.server.request.availability") as "Avg" span=60s
 </span></code></pre></div>
 <ul>
 <li>Click on the <code>Visualization</code> tab to change the chart type to <code>Line Chart</code></li>
