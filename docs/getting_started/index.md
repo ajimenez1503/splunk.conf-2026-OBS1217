@@ -12,7 +12,7 @@ Before diving into the workshop labs, set up access to the environments you'll u
 
     Log in to ThousandEyes and create a Page Load test to generate synthetic data for the workshop.
 
-    [:octicons-arrow-right-24: Get started](thousandeyes.md)
+    [Get started →](thousandeyes.md)
 
 -   **Splunk Observability Cloud**
 
@@ -20,7 +20,7 @@ Before diving into the workshop labs, set up access to the environments you'll u
 
     Log in to Splunk Observability Cloud to stream and visualize ThousandEyes metrics and traces.
 
-    [:octicons-arrow-right-24: Get started](login_splunk_observability.md)
+    [Get started →](login_splunk_observability.md)
 
 -   **Splunk Platform**
 
@@ -28,6 +28,6 @@ Before diving into the workshop labs, set up access to the environments you'll u
 
     Access your Splunk Show instance and copy your HEC token for direct streaming to Splunk Platform.
 
-    [:octicons-arrow-right-24: Get started](login_splunk_show.md)
+    [Get started →](login_splunk_show.md)
 
 </div>
