@@ -13,7 +13,6 @@ validation:
 nav:
   - Home: README.md
   - Getting Started:
-    - getting_started/index.md
     - ThousandEyes: getting_started/thousandeyes.md
     - Splunk Observability Cloud: getting_started/login_splunk_observability.md
     - Splunk Platform: getting_started/login_splunk_show.md
