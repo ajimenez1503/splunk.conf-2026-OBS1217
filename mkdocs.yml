@@ -13,9 +13,10 @@ validation:
 nav:
   - Home: README.md
   - Getting Started:
+    - getting_started/index.md
     - ThousandEyes: getting_started/thousandeyes.md
-    - Log In to Splunk Observability Cloud: getting_started/login_splunk_observability.md
-    - Log In to Splunk Show: getting_started/login_splunk_show.md
+    - Splunk Observability Cloud: getting_started/login_splunk_observability.md
+    - Splunk Platform: getting_started/login_splunk_show.md
   - Service Map:
     - Create the Splunk APM Integration: service_map/basic/create_splunk_apm_integration.md
     - Create ThousandEyes HTTP Server Test: service_map/basic/create_thousandeyes_http_test.md

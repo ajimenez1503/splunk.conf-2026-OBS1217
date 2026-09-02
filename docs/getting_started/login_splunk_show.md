@@ -1,14 +1,16 @@
-# Access your Splunk Show Instance
+# Splunk Platform
+
+## Access your Splunk Show Instance
 
 This guide will help you log into your Splunk Show instance and copy the HEC token for the ThousandEyes stream.
 
-## Prerequisites
+### Prerequisites
 
 Splunk’s hands-on workshops are delivered via the [Splunk Show](https://show.splunk.com/) portal - you will need a splunk.com account in order to access this.
 
 If you don’t already have a Splunk.com account, please create one [here](https://www.splunk.com/en_us/sign-up.html) before proceeding with the rest of the workshop.
 
-## Login to Splunk Show
+### Log In to Splunk Platform
 
 You should have received an invite email from Splunk Show containing a link to a workshop event `https://splunk.show/…`
 
@@ -34,13 +36,13 @@ You should have received an invite email from Splunk Show containing a link to a
 
 ![Splunk Show enroll email](../img/splunk_core/splunk_show_enroll_2.png)
 
-## Finding Your Instance Details
+### Finding Your Instance Details
 
 1.	Scroll down the page to the `Instances information` section. Here you will find information on how to access your environment along with the login details. 
 
 ![Splunk Show instance info](../img/splunk_core/splunk_show_instance_info.png)
 
-## Find your HEC Token
+### Find your HEC Token
 
 We will use HTTP Event Collector (HEC) to get data from Thousand eyes. A token is already created for the workshop.
 
@@ -51,7 +53,7 @@ We will use HTTP Event Collector (HEC) to get data from Thousand eyes. A token i
 
 ![Hec Token](../img/splunk_core/splunk_copy_hec_token.png)
 
-## Identify the hostname of your Splunk instance
+### Identify the hostname of your Splunk instance
 
 Use the complete hostname shown in your Splunk Web URL.
 

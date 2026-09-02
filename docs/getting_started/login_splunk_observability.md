@@ -1,6 +1,6 @@
-# Log In to Splunk Observability Cloud
+# Splunk Observability Cloud
 
-This guide will help you log into Splunk Observability Cloud.
+## Log In to Splunk Observability Cloud
 
 Use the workshop account to access Splunk Observability Cloud:
 
