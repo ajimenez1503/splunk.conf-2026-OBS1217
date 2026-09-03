@@ -21,7 +21,7 @@ To create a ThousandEyes Metric Stream for Splunk Observability Cloud, follow th
     - For `Preset Configuration`, select `Splunk Observability Cloud`
     - For `Auth Type`, select `Custom`
     - Set the following `Custom Headers`:
-        - `X-SF-Token` to `<your-o11y-access-token>`
+        - `X-SF-Token` to `qc-VZhVaVARLKDPuhBJQfQ`
         - `Content-Type` to `application/x-protobuf`
     - Select `Metric` as the `OpenTelemetry Signal`
     - Select `v2` as the `Data Model Version`

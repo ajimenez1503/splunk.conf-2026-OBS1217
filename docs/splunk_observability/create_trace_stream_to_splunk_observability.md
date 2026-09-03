@@ -21,7 +21,7 @@ To create a ThousandEyes Trace Stream for Splunk Observability Cloud, follow the
     - For `Preset Configuration`, select `Splunk Observability Cloud`
     - For `Auth Type`, select `Custom`
     - Set the following `Custom Headers`:
-        - `X-SF-Token` to `<your-o11y-access-token>`
+        - `X-SF-Token` to `qc-VZhVaVARLKDPuhBJQfQ`
         - `Content-Type` to `application/x-protobuf`
     - Select `Trace` as the `OpenTelemetry Signal`
     - Select `v2` as the `Data Model Version`
