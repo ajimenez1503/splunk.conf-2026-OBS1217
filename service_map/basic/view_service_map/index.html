@@ -1501,16 +1501,17 @@
 
 <h1 id="view-the-service-map-in-splunk-observability">View the Service Map in Splunk Observability</h1>
 <p>Under <code>Network &amp; App Synthetics</code> -&gt; <code>Views</code>, select your HTTP Server test.</p>
-<p><img alt="HTTP Server View" src="../../../img/thousandeyes/http_server_view.png" /></p>
+<p><img alt="HTTP Server View" src="../../../img/thousandeyes/http_server_view_new.png" /></p>
 <ul>
-<li>As you enabled the Distributed Tracing in the test. ThousandEyes automatically injects the following trace headers into requests:<ul>
+<li>Since you enabled the Distributed Tracing in the test, ThousandEyes automatically injects the following trace headers into requests:<ul>
 <li><code>b3</code></li>
 <li><code>traceparent</code></li>
 <li><code>tracestate</code></li>
 </ul>
 </li>
+<li>To validate if headers are present, from the <code>HTTP Server</code> view, select the <code>Map</code> tab, find <code>Status</code> panel and click <code>Details</code></li>
 </ul>
-<p><img alt="Trace headers" src="../../../img/thousandeyes/headers.png" /></p>
+<p><img alt="Trace headers" src="../../../img/thousandeyes/http_server_headers_new.png" /></p>
 <ul>
 <li>Under the <code>HTTP Server</code> layer, open the <code>Service Map</code> tab.</li>
 <li>Use the service map to analyze the trace path:</li>
