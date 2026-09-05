@@ -15,16 +15,21 @@ We will be using the credentials from the Splunk Observability owned by Thousand
     ![Create connector Splunk APM](../../img/thousandeyes/create_connector_splunk_APM.png)
 
 -  Create an **Operation**:
-      -  Click `+ New Operation` to open the menu to select the operation type
-      -  Choose `Splunk Observability APM` to proceed to the configuration form
-      -  Enter the `Operation Name`: `Splunk Observability APM`
+      - Click `+ New Operation` to open the menu to select the operation type
+      - Choose `Splunk Observability APM` to proceed to the configuration form
+      - Enter the `Operation Name`: `Splunk Observability APM`
       - Click `Save & Assign Connector`
 
-
-![Create Operation Splunk APM](../../img/thousandeyes/create_operation_splunk_APM.png)
+      ![Create Operation Splunk APM](../../img/thousandeyes/create_operation_splunk_APM.png)
 
 - Assign the Operation to the Connector:
-      -  Select the `Splunk Observability APM` from the `Connector` dropdown
-      -  Click `Save & Assign Operation`
+      - Select the `Splunk Observability APM` from the `Connector` dropdown
+      - Click `Save & Assign Operation`
 
 ![Create Operation Assignment Splunk APM](../../img/thousandeyes/create_operation_assignment_splunk_APM.png)
+
+To check if the integration was saved successfully, navigate to `Manage` -> `Integrations` -> `Integrations 2.0` -> `Operations`
+
+There you should see your connector, operation and status
+
+![Create Operation Splunk APM](../../img/thousandeyes/validate_integration_apm.png)

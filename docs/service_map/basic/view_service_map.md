@@ -2,14 +2,15 @@
 
 Under `Network & App Synthetics` -> `Views`, select your HTTP Server test.
 
-![HTTP Server View](../../img/thousandeyes/http_server_view.png)
+![HTTP Server View](../../img/thousandeyes/http_server_view_new.png)
 
-- As you enabled the Distributed Tracing in the test. ThousandEyes automatically injects the following trace headers into requests:
-      - `b3`
-      - `traceparent`
-      - `tracestate`
+- Since you enabled the Distributed Tracing in the test, ThousandEyes automatically injects the following trace headers into requests:
+    - `b3`
+    - `traceparent`
+    - `tracestate`
+- To validate if headers are present, from the `HTTP Server` view, select the `Map` tab, find `Status` panel and click `Details`
 
-![Trace headers](../../img/thousandeyes/headers.png)
+![Trace headers](../../img/thousandeyes/http_server_headers_new.png)
 
 - Under the `HTTP Server` layer, open the `Service Map` tab.
 - Use the service map to analyze the trace path:
