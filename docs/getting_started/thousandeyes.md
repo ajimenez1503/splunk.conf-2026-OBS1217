@@ -2,7 +2,7 @@
 
 ## Log In to ThousandEyes
 
-Use the shared [ThousandEyes workshop credentials spreadsheet](https://cisco-my.sharepoint.com/:x:/p/antonjim/IQDgi_SAY4ZhR7fAsmQakSbpAbHZA_KhqGCfyOus7eafp5k?e=PLOcU2) to obtain your credentials. If prompted, sign in with your Cisco account.
+Use the shared <a href="TODO">ThousandEyes workshop credentials spreadsheet</a> to obtain your credentials. If prompted, sign in with your Cisco account.
 
 1. Find a row where the **Taken By** column is empty.
 2. Enter your full name in **Taken By** to claim that row before using its credentials.
