@@ -14,7 +14,7 @@ If you don’t already have a Splunk.com account, please create one [here](https
 
 You should have received an invite email from Splunk Show containing a link to a workshop event `https://splunk.show/…`
 
-If you don't have the link, use the workshop event directly: **TODO**
+If you don't have the link, use the workshop event directly: [https://splunk.show/obs1217](https://splunk.show/obs1217)
 
 ❌ If you DON'T have an email from Splunk Show:
 
